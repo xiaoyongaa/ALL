@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebc761b-f186-4d0d-a9ec-e9808d8b55f7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../FTP" afterPath="$PROJECT_DIR$/../FTP" />
-    </list>
+    <list default="true" id="bebc761b-f186-4d0d-a9ec-e9808d8b55f7" name="Default" comment="" />
     <ignored path="python基础2周.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -223,8 +221,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="662" />
-    <option name="y" value="70" />
+    <option name="x" value="-287" />
+    <option name="y" value="99" />
     <option name="width" value="1932" />
     <option name="height" value="1090" />
   </component>
@@ -923,7 +921,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="662" y="70" width="1932" height="1090" extended-state="0" />
+    <frame x="-287" y="99" width="1932" height="1090" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18110648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
