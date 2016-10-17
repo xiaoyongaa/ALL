@@ -223,8 +223,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="298" />
-    <option name="y" value="52" />
+    <option name="x" value="662" />
+    <option name="y" value="70" />
     <option name="width" value="1932" />
     <option name="height" value="1090" />
   </component>
@@ -923,7 +923,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="298" y="52" width="1932" height="1090" extended-state="0" />
+    <frame x="662" y="70" width="1932" height="1090" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18110648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
