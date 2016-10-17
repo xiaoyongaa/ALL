@@ -1,1 +1,0 @@
-直接执行bin/下面的server_longin.py启动server端

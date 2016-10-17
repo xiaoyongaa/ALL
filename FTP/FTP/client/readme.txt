@@ -1,1 +1,0 @@
-直接执行bin/下面的clinet_start.py启动clinet端
