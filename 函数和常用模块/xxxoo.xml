@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<root>
+	<son1 name="¶ù1">
+		<shunzhi1 name="shuzhi1"/>
+	</son1>
+	<son2 name="¶ù2">
+		<shunzhi2 name="shuzhi2"/>
+	</son2>
+</root>

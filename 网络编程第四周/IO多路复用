@@ -1,0 +1,6 @@
+IO多路复用
+select,poll,epoll
+监听socket对象的内部是否变化了
+变化是指 连接或者首发消息
+conn,addr=s.accept()   #开始接收
+conn是为客户端创建的一个对象

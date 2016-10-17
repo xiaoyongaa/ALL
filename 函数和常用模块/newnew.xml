@@ -1,0 +1,22 @@
+<data name="dasd">
+    <country name="Liechtenstein">
+        <rank updated="yes">2</rank>
+        <year name="dsad">2024</year>
+        <gdppc>141100</gdppc>
+        <neighbor direction="E" name="Austria" />
+        <neighbor direction="W" name="Switzerland" />
+    </country>
+    <country name="Singapore">
+        <rank updated="yes">5</rank>
+        <year name="dsad">2027</year>
+        <gdppc>59900</gdppc>
+        <neighbor direction="N" name="Malaysia" />
+    </country>
+    <country name="Panama">
+        <rank updated="yes">69</rank>
+        <year name="dsad">2027</year>
+        <gdppc>13600</gdppc>
+        <neighbor direction="W" name="Costa Rica" />
+        <neighbor direction="E" name="Colombia" />
+    </country>
+</data>

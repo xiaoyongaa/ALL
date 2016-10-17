@@ -1,0 +1,7 @@
+1|1|1|1|y
+2|2|2|2|y
+r|drrrrrrrrrrrrrrrrrrrrrr|1|r|y
+e|777777777777777|r|e|y
+v|vvvvvvvvvvvvvvvvv|v@qq.com|v|n
+xiaoyong|fffffffffffff|x@qq.com|18761515328|y
+t|t|1|1|y

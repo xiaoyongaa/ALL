@@ -1,0 +1,7 @@
+import os
+df=os.system("df -h")  返回执行命令成功失败代码
+
+df=os.popen("ls").read()  返回命令结果
+
+import sys
+sys.path  #打印python的环境变量

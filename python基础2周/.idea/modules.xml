@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../.idea/python代码.iml" filepath="$PROJECT_DIR$/../.idea/python代码.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/python基础2周.iml" filepath="$PROJECT_DIR$/.idea/python基础2周.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../函数和常用模块/.idea/函数和常用模块.iml" filepath="$PROJECT_DIR$/../函数和常用模块/.idea/函数和常用模块.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../启动停止脚本/.idea/启动停止脚本.iml" filepath="$PROJECT_DIR$/../启动停止脚本/.idea/启动停止脚本.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../面向对象模块学习/.idea/面向对象模块学习.iml" filepath="$PROJECT_DIR$/../面向对象模块学习/.idea/面向对象模块学习.iml" />
+    </modules>
+  </component>
+</project>
