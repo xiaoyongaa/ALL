@@ -8,3 +8,5 @@ def f1(i):
 for j in range(10):
     t1=threading.Thread(target=f1,args=(j,))
     t1.start()
+
+#多线程
