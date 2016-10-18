@@ -7,23 +7,28 @@
 
 
 
-class f1:
-    def f1(self):
-        print("f1")
+# class f1:
+#     def f1(self):
+#         print("f1")
+#
+#
+# class f2:
+#     def f1(self):
+#         print("f2")
+#         print(self.f1())
+#
+#
+#
+# class f3(f2,f1):
+#     def f1(self):
+#         print("f3")
+#
+#
+#
+# obj=f3()
+# obj.f1()
 
 
-class f2:
-    def f1(self):
-        print("f2")
-        print(self.f1())
+import json
 
 
-
-class f3(f2,f1):
-    def f1(self):
-        print("f3")
-
-
-
-obj=f3()
-obj.f1()
