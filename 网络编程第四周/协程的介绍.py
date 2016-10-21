@@ -15,17 +15,22 @@
 import sys
 import requests
 
-import gevent
-print(sys.path)
-# url="https://www.python.org/"
+#import gevent
+
+url="http://www.cnblogs.com/wupeiqi/articles/5040827.html"
 #
-# def f(url):
-#     #print('GET: %s' % url)
-#     resp = requests.get(url)
-#     res=resp.status_code  #返回http狀態
-#     data = resp.text
-#     print(url,res)
-#     #print(resp.text)
+def f(url):
+    #print('GET: %s' % url)
+    resp=requests.get(url)
+    #res=resp.status_code  #返回http狀態
+    data=resp.text
+    data=bytes(data,encoding="utf-8")
+    print(type(data))
+    with open("E:\\test.html","wb") as new:
+       new.write(data)
+
+
+    #print(resp.text)
 
 
 f(url)

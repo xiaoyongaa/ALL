@@ -1,0 +1,2019 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Python开发【第六篇】：模块 - 武沛齐 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=XrHjCqi-oUg9M4EcevxEUXvgm_dLNu97ZVKqK6ra-aE1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/SimpleBlue/bundle-SimpleBlue.css?v=jJERBFSojhmgst84aaRDal9S3q1WoO-WcNudmMzGJS81"/>
+<link id="mobile-style" media="only screen and (max-device-width: 980px)" type="text/css" rel="stylesheet" href="/skins/SimpleBlue/bundle-SimpleBlue-mobile.css?v=47hvZ9g0WY8wC-XQKDFoD9n7XNAFhprmgahmOeFPwg01"/>
+<link type="text/css" rel="stylesheet" href="/blog/customcss/133379.css?v=YSNZANkz7eBKoXq2iHYfghvodkY%3d"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/wupeiqi/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/wupeiqi/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/wupeiqi/wlwmanifest.xml"/>
+<script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'wupeiqi', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="/bundles/blog-common.js?v=uYCzNuQX5hH5KvhSZMZHz8TovNZYkn1hiRpZbf2hbns1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+		
+<!--done-->
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/wupeiqi/">Mr.Seven</a></div>
+<div class="subtitle"></div>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li id="nav_myhome"><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/wupeiqi/">首页</a></li>
+<li id="nav_newpost"><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li id="nav_contact"><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E6%AD%A6%E6%B2%9B%E9%BD%90">联系</a></li>
+<li id="nav_rss"><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/wupeiqi/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/wupeiqi/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li id="nav_admin"><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<!--done-->
+随笔-124&nbsp;
+文章-123&nbsp;
+评论-194&nbsp;
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/wupeiqi/articles/5501365.html">Python开发【第六篇】：模块</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p>模块，用一砣代码实现了某个功能的代码集合。&nbsp;</p>
+<p>类似于函数式编程和面向过程编程，函数式编程则完成一个功能，其他代码用来调用即可，提供了代码的重用性和代码间的耦合。而对于一个复杂的功能来，可能需要多个函数才能完成（函数又可以在不同的.py文件中），n个 .py 文件组成的代码集合就称为模块。</p>
+<p>如：os 是系统相关的模块；file是文件操作相关的模块</p>
+<p>模块分为三种：</p>
+<ul>
+<li>自定义模块</li>
+<li>第三方模块</li>
+<li>内置模块</li>
+</ul>
+<h3>自定义模块</h3>
+<p><strong>1、定义模块</strong></p>
+<p><strong>情景一：</strong></p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/425762/201511/425762-20151120210254796-391850912.png" alt="" width="339" height="50" /></p>
+<p><strong>情景二：</strong></p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/425762/201511/425762-20151120204455296-1485426970.png" alt="" width="347" height="109" /></p>
+<p><strong>情景三：</strong></p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/425762/201511/425762-20151120204617843-2002471507.png" alt="" width="344" height="155" /></p>
+<p><strong>2、导入模块</strong></p>
+<p>Python之所以应用越来越广泛，在一定程度上也依赖于其为程序员提供了大量的模块以供使用，如果想要使用模块，则需要导入。导入模块有一下几种方法：</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import module
+from module.xx.xx import xx
+from module.xx.xx import xx as rename  
+from module.xx.xx import *
+</pre>
+</div>
+<p>导入模块其实就是告诉Python解释器去解释那个py文件</p>
+<ul>
+<li>导入一个py文件，解释器解释该py文件</li>
+<li>导入一个包，解释器解释该包下的 __init__.py 文件 【py2.7】</li>
+</ul>
+<p>那么问题来了，导入模块时是根据那个路径作为基准来进行的呢？即：sys.path</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import sys
+print sys.path
+  
+结果：
+['/Users/wupeiqi/PycharmProjects/calculator/p1/pp1', '/usr/local/lib/python2.7/site-packages/setuptools-15.2-py2.7.egg', '/usr/local/lib/python2.7/site-packages/distribute-0.6.28-py2.7.egg', '/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.10-x86_64.egg', '/usr/local/lib/python2.7/site-packages/xlutils-1.7.1-py2.7.egg', '/usr/local/lib/python2.7/site-packages/xlwt-1.0.0-py2.7.egg', '/usr/local/lib/python2.7/site-packages/xlrd-0.9.3-py2.7.egg', '/usr/local/lib/python2.7/site-packages/tornado-4.1-py2.7-macosx-10.10-x86_64.egg', '/usr/local/lib/python2.7/site-packages/backports.ssl_match_hostname-3.4.0.2-py2.7.egg', '/usr/local/lib/python2.7/site-packages/certifi-2015.4.28-py2.7.egg', '/usr/local/lib/python2.7/site-packages/pyOpenSSL-0.15.1-py2.7.egg', '/usr/local/lib/python2.7/site-packages/six-1.9.0-py2.7.egg', '/usr/local/lib/python2.7/site-packages/cryptography-0.9.1-py2.7-macosx-10.10-x86_64.egg', '/usr/local/lib/python2.7/site-packages/cffi-1.1.1-py2.7-macosx-10.10-x86_64.egg', '/usr/local/lib/python2.7/site-packages/ipaddress-1.0.7-py2.7.egg', '/usr/local/lib/python2.7/site-packages/enum34-1.0.4-py2.7.egg', '/usr/local/lib/python2.7/site-packages/pyasn1-0.1.7-py2.7.egg', '/usr/local/lib/python2.7/site-packages/idna-2.0-py2.7.egg', '/usr/local/lib/python2.7/site-packages/pycparser-2.13-py2.7.egg', '/usr/local/lib/python2.7/site-packages/Django-1.7.8-py2.7.egg', '/usr/local/lib/python2.7/site-packages/paramiko-1.10.1-py2.7.egg', '/usr/local/lib/python2.7/site-packages/gevent-1.0.2-py2.7-macosx-10.10-x86_64.egg', '/usr/local/lib/python2.7/site-packages/greenlet-0.4.7-py2.7-macosx-10.10-x86_64.egg', '/Users/wupeiqi/PycharmProjects/calculator', '/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python27.zip', '/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7', '/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin', '/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac', '/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages', '/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk', '/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-old', '/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload', '/usr/local/lib/python2.7/site-packages', '/Library/Python/2.7/site-packages']
+</pre>
+</div>
+<p>如果sys.path路径列表没有你想要的路径，可以通过 sys.path.append('路径') 添加。</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import sys
+import os
+project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(project_path)
+</pre>
+</div>
+<h3>模块</h3>
+<p>内置模块是Python自带的功能，在使用内置模块相应的功能时，需要【先导入】再【使用】</p>
+<h2><strong>一、sys</strong></h2>
+<p>用于提供对Python解释器相关的操作：</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">sys.argv           命令行参数List，第一个元素是程序本身路径
+sys.exit(n)        退出程序，正常退出时exit(0)
+sys.version        获取Python解释程序的版本信息
+sys.maxint         最大的Int值
+sys.path           返回模块的搜索路径，初始化时使用PYTHONPATH环境变量的值
+sys.platform       返回操作系统平台名称
+sys.stdin          输入相关
+sys.stdout         输出相关
+sys.stderror       错误相关
+</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('5d9e6da1-a1f0-4cc9-950d-f4c68406f4f5')"><img id="code_img_closed_5d9e6da1-a1f0-4cc9-950d-f4c68406f4f5" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_5d9e6da1-a1f0-4cc9-950d-f4c68406f4f5" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('5d9e6da1-a1f0-4cc9-950d-f4c68406f4f5',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_5d9e6da1-a1f0-4cc9-950d-f4c68406f4f5" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> sys
+</span><span style="color: #0000ff;">import</span><span style="color: #000000;"> time
+
+
+</span><span style="color: #0000ff;">def</span><span style="color: #000000;"> view_bar(num, total):
+    rate </span>= float(num) /<span style="color: #000000;"> float(total)
+    rate_num </span>= int(rate * 100<span style="color: #000000;">)
+    r </span>= <span style="color: #800000;">'</span><span style="color: #800000;">\r%d%%</span><span style="color: #800000;">'</span> %<span style="color: #000000;"> (rate_num, )
+    sys.stdout.write(r)
+    sys.stdout.flush()
+
+
+</span><span style="color: #0000ff;">if</span> <span style="color: #800080;">__name__</span> == <span style="color: #800000;">'</span><span style="color: #800000;">__main__</span><span style="color: #800000;">'</span><span style="color: #000000;">:
+    </span><span style="color: #0000ff;">for</span> i <span style="color: #0000ff;">in</span> range(0, 100<span style="color: #000000;">):
+        time.sleep(</span>0.1<span style="color: #000000;">)
+        view_bar(i, </span>100)</pre>
+</div>
+<span class="cnblogs_code_collapse">进度百分比</span></div>
+<h2><strong>二、os</strong></h2>
+<p>用于提供系统级别的操作：</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">os.getcwd()                 获取当前工作目录，即当前python脚本工作的目录路径
+os.chdir("dirname")         改变当前脚本工作目录；相当于shell下cd
+os.curdir                   返回当前目录: ('.')
+os.pardir                   获取当前目录的父目录字符串名：('..')
+os.makedirs('dir1/dir2')    可生成多层递归目录
+os.removedirs('dirname1')   若目录为空，则删除，并递归到上一级目录，如若也为空，则删除，依此类推
+os.mkdir('dirname')         生成单级目录；相当于shell中mkdir dirname
+os.rmdir('dirname')         删除单级空目录，若目录不为空则无法删除，报错；相当于shell中rmdir dirname
+os.listdir('dirname')       列出指定目录下的所有文件和子目录，包括隐藏文件，并以列表方式打印
+os.remove()                 删除一个文件
+os.rename("oldname","new")  重命名文件/目录
+os.stat('path/filename')    获取文件/目录信息
+os.sep                      操作系统特定的路径分隔符，win下为"\\",Linux下为"/"
+os.linesep                  当前平台使用的行终止符，win下为"\t\n",Linux下为"\n"
+os.pathsep                  用于分割文件路径的字符串
+os.name                     字符串指示当前使用平台。win-&gt;'nt'; Linux-&gt;'posix'
+os.system("bash command")   运行shell命令，直接显示
+os.environ                  获取系统环境变量
+os.path.abspath(path)       返回path规范化的绝对路径
+os.path.split(path)         将path分割成目录和文件名二元组返回
+os.path.dirname(path)       返回path的目录。其实就是os.path.split(path)的第一个元素
+os.path.basename(path)      返回path最后的文件名。如何path以／或\结尾，那么就会返回空值。即os.path.split(path)的第二个元素
+os.path.exists(path)        如果path存在，返回True；如果path不存在，返回False
+os.path.isabs(path)         如果path是绝对路径，返回True
+os.path.isfile(path)        如果path是一个存在的文件，返回True。否则返回False
+os.path.isdir(path)         如果path是一个存在的目录，则返回True。否则返回False
+os.path.join(path1[, path2[, ...]])  将多个路径组合后返回，第一个绝对路径之前的参数将被忽略
+os.path.getatime(path)      返回path所指向的文件或者目录的最后存取时间
+os.path.getmtime(path)      返回path所指向的文件或者目录的最后修改时间
+</pre>
+</div>
+<h2><strong>三、hashlib</strong></h2>
+<p>用于加密相关的操作，代替了md5模块和sha模块，主要提供&nbsp;SHA1, SHA224, SHA256, SHA384, SHA512 ，MD5 算法</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import hashlib
+
+# ######## md5 ########
+hash = hashlib.md5()
+# help(hash.update)
+hash.update(bytes('admin', encoding='utf-8'))
+print(hash.hexdigest())
+print(hash.digest())
+
+
+######## sha1 ########
+
+hash = hashlib.sha1()
+hash.update(bytes('admin', encoding='utf-8'))
+print(hash.hexdigest())
+
+# ######## sha256 ########
+
+hash = hashlib.sha256()
+hash.update(bytes('admin', encoding='utf-8'))
+print(hash.hexdigest())
+
+
+# ######## sha384 ########
+
+hash = hashlib.sha384()
+hash.update(bytes('admin', encoding='utf-8'))
+print(hash.hexdigest())
+
+# ######## sha512 ########
+
+hash = hashlib.sha512()
+hash.update(bytes('admin', encoding='utf-8'))
+print(hash.hexdigest())
+</pre>
+</div>
+<p>以上加密算法虽然依然非常厉害，但时候存在缺陷，即：通过撞库可以反解。所以，有必要对加密算法中添加自定义key再来做加密。</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import hashlib
+
+# ######## md5 ########
+
+hash = hashlib.md5(bytes('898oaFs09f',encoding="utf-8"))
+hash.update(bytes('admin',encoding="utf-8"))
+print(hash.hexdigest())
+</pre>
+</div>
+<p>python内置还有一个 hmac 模块，它内部对我们创建 key 和 内容 进行进一步的处理然后再加密</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import hmac
+
+h = hmac.new(bytes('898oaFs09f',encoding="utf-8"))
+h.update(bytes('admin',encoding="utf-8"))
+print(h.hexdigest())
+</pre>
+</div>
+<h2><strong>四、random</strong></h2>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import random
+
+print(random.random())
+print(random.randint(1, 2))
+print(random.randrange(1, 10))
+</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('ce63f47e-62d6-46ae-9a61-f76f72870291')"><img id="code_img_closed_ce63f47e-62d6-46ae-9a61-f76f72870291" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_ce63f47e-62d6-46ae-9a61-f76f72870291" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('ce63f47e-62d6-46ae-9a61-f76f72870291',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_ce63f47e-62d6-46ae-9a61-f76f72870291" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> random
+checkcode </span>= <span style="color: #800000;">''</span>
+<span style="color: #0000ff;">for</span> i <span style="color: #0000ff;">in</span> range(4<span style="color: #000000;">):
+    current </span>= random.randrange(0,4<span style="color: #000000;">)
+    </span><span style="color: #0000ff;">if</span> current !=<span style="color: #000000;"> i:
+        temp </span>= chr(random.randint(65,90<span style="color: #000000;">))
+    </span><span style="color: #0000ff;">else</span><span style="color: #000000;">:
+        temp </span>= random.randint(0,9<span style="color: #000000;">)
+    checkcode </span>+=<span style="color: #000000;"> str(temp)
+</span><span style="color: #0000ff;">print</span> checkcode</pre>
+</div>
+<span class="cnblogs_code_collapse">随机验证码</span></div>
+<h2><span style="line-height: 1.5;">五、re</span></h2>
+<p><span style="line-height: 1.5;">python中re模块提供了正则表达式相关操作</span></p>
+<p>&nbsp;</p>
+<p>字符：</p>
+<p>&nbsp;</p>
+<p>　　. 匹配除换行符以外的任意字符<br />　　\w	匹配字母或数字或下划线或汉字<br />　　\s	匹配任意的空白符<br />　　\d	匹配数字<br />　　\b	匹配单词的开始或结束<br />　　^	匹配字符串的开始<br />　　$	匹配字符串的结束</p>
+<p>&nbsp;</p>
+<p>次数：</p>
+<p>&nbsp;</p>
+<p>　　* 重复零次或更多次<br />　　+	重复一次或更多次<br />　　?	重复零次或一次<br />　　{n}	重复n次<br />　　{n,}	重复n次或更多次<br />　　{n,m}	重复n到m次</p>
+<p>&nbsp;</p>
+<p><span style="line-height: 1.5;">match</span></p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">       # match，从起始位置开始匹配，匹配成功返回一个对象，未匹配成功返回None
+
+
+        match(pattern, string, flags=0)
+        # pattern： 正则模型
+        # string ： 要匹配的字符串
+        # falgs  ： 匹配模式
+            X  VERBOSE     Ignore whitespace and comments for nicer looking RE's.
+            I  IGNORECASE  Perform case-insensitive matching.
+            M  MULTILINE   "^" matches the beginning of lines (after a newline)
+                           as well as the string.
+                           "$" matches the end of lines (before a newline) as well
+                           as the end of the string.
+            S  DOTALL      "." matches any character at all, including the newline.
+
+            A  ASCII       For string patterns, make \w, \W, \b, \B, \d, \D
+                           match the corresponding ASCII character categories
+                           (rather than the whole Unicode categories, which is the
+                           default).
+                           For bytes patterns, this flag is the only available
+                           behaviour and needn't be specified.
+            
+            L  LOCALE      Make \w, \W, \b, \B, dependent on the current locale.
+            U  UNICODE     For compatibility only. Ignored for string patterns (it
+                           is the default), and forbidden for bytes patterns.</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('6b21dc08-4d87-4b54-9103-22571fd90ec4')"><img id="code_img_closed_6b21dc08-4d87-4b54-9103-22571fd90ec4" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_6b21dc08-4d87-4b54-9103-22571fd90ec4" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('6b21dc08-4d87-4b54-9103-22571fd90ec4',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_6b21dc08-4d87-4b54-9103-22571fd90ec4" class="cnblogs_code_hide">
+<pre>        <span style="color: #008000;">#</span><span style="color: #008000;"> 无分组</span>
+        r = re.match(<span style="color: #800000;">"</span><span style="color: #800000;">h\w+</span><span style="color: #800000;">"</span><span style="color: #000000;">, origin)
+        </span><span style="color: #0000ff;">print</span>(r.group())     <span style="color: #008000;">#</span><span style="color: #008000;"> 获取匹配到的所有结果</span>
+        <span style="color: #0000ff;">print</span>(r.groups())    <span style="color: #008000;">#</span><span style="color: #008000;"> 获取模型中匹配到的分组结果</span>
+        <span style="color: #0000ff;">print</span>(r.groupdict()) <span style="color: #008000;">#</span><span style="color: #008000;"> 获取模型中匹配到的分组结果</span>
+
+        <span style="color: #008000;">#</span><span style="color: #008000;"> 有分组</span>
+
+        <span style="color: #008000;">#</span><span style="color: #008000;"> 为何要有分组？提取匹配成功的指定内容（先匹配成功全部正则，再匹配成功的局部内容提取出来）</span>
+<span style="color: #000000;">
+        r </span>= re.match(<span style="color: #800000;">"</span><span style="color: #800000;">h(\w+).*(?P&lt;name&gt;\d)$</span><span style="color: #800000;">"</span><span style="color: #000000;">, origin)
+        </span><span style="color: #0000ff;">print</span>(r.group())     <span style="color: #008000;">#</span><span style="color: #008000;"> 获取匹配到的所有结果</span>
+        <span style="color: #0000ff;">print</span>(r.groups())    <span style="color: #008000;">#</span><span style="color: #008000;"> 获取模型中匹配到的分组结果</span>
+        <span style="color: #0000ff;">print</span>(r.groupdict()) <span style="color: #008000;">#</span><span style="color: #008000;"> 获取模型中匹配到的分组中所有执行了key的组</span></pre>
+</div>
+<span class="cnblogs_code_collapse">Demo</span></div>
+<p>search</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;"># search,浏览整个字符串去匹配第一个，未匹配成功返回None
+# search(pattern, string, flags=0)</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('30d43937-815c-4182-a3c0-4e9a3326b6c7')"><img id="code_img_closed_30d43937-815c-4182-a3c0-4e9a3326b6c7" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_30d43937-815c-4182-a3c0-4e9a3326b6c7" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('30d43937-815c-4182-a3c0-4e9a3326b6c7',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_30d43937-815c-4182-a3c0-4e9a3326b6c7" class="cnblogs_code_hide">
+<pre>        <span style="color: #008000;">#</span><span style="color: #008000;"> 无分组</span>
+<span style="color: #000000;">
+        r </span>= re.search(<span style="color: #800000;">"</span><span style="color: #800000;">a\w+</span><span style="color: #800000;">"</span><span style="color: #000000;">, origin)
+        </span><span style="color: #0000ff;">print</span>(r.group())     <span style="color: #008000;">#</span><span style="color: #008000;"> 获取匹配到的所有结果</span>
+        <span style="color: #0000ff;">print</span>(r.groups())    <span style="color: #008000;">#</span><span style="color: #008000;"> 获取模型中匹配到的分组结果</span>
+        <span style="color: #0000ff;">print</span>(r.groupdict()) <span style="color: #008000;">#</span><span style="color: #008000;"> 获取模型中匹配到的分组结果</span>
+
+        <span style="color: #008000;">#</span><span style="color: #008000;"> 有分组</span>
+<span style="color: #000000;">
+        r </span>= re.search(<span style="color: #800000;">"</span><span style="color: #800000;">a(\w+).*(?P&lt;name&gt;\d)$</span><span style="color: #800000;">"</span><span style="color: #000000;">, origin)
+        </span><span style="color: #0000ff;">print</span>(r.group())     <span style="color: #008000;">#</span><span style="color: #008000;"> 获取匹配到的所有结果</span>
+        <span style="color: #0000ff;">print</span>(r.groups())    <span style="color: #008000;">#</span><span style="color: #008000;"> 获取模型中匹配到的分组结果</span>
+        <span style="color: #0000ff;">print</span>(r.groupdict()) <span style="color: #008000;">#</span><span style="color: #008000;"> 获取模型中匹配到的分组中所有执行了key的组</span></pre>
+</div>
+<span class="cnblogs_code_collapse">demo</span></div>
+<p>findall</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">        # findall，获取非重复的匹配列表；如果有一个组则以列表形式返回，且每一个匹配均是字符串；如果模型中有多个组，则以列表形式返回，且每一个匹配均是元祖；
+        # 空的匹配也会包含在结果中
+        #findall(pattern, string, flags=0)
+</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('5d8426be-6941-4067-bcf0-763a69e4d0a7')"><img id="code_img_closed_5d8426be-6941-4067-bcf0-763a69e4d0a7" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_5d8426be-6941-4067-bcf0-763a69e4d0a7" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('5d8426be-6941-4067-bcf0-763a69e4d0a7',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_5d8426be-6941-4067-bcf0-763a69e4d0a7" class="cnblogs_code_hide">
+<pre>        <span style="color: #008000;">#</span><span style="color: #008000;"> 无分组</span>
+        r = re.findall(<span style="color: #800000;">"</span><span style="color: #800000;">a\w+</span><span style="color: #800000;">"</span><span style="color: #000000;">,origin)
+        </span><span style="color: #0000ff;">print</span><span style="color: #000000;">(r)
+
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> 有分组</span>
+        origin = <span style="color: #800000;">"</span><span style="color: #800000;">hello alex bcd abcd lge acd 19</span><span style="color: #800000;">"</span><span style="color: #000000;">
+        r </span>= re.findall(<span style="color: #800000;">"</span><span style="color: #800000;">a((\w*)c)(d)</span><span style="color: #800000;">"</span><span style="color: #000000;">, origin)
+        </span><span style="color: #0000ff;">print</span>(r)</pre>
+</div>
+<span class="cnblogs_code_collapse">Demo</span></div>
+<p>sub</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">        # sub，替换匹配成功的指定位置字符串
+
+        sub(pattern, repl, string, count=0, flags=0)
+        # pattern： 正则模型
+        # repl   ： 要替换的字符串或可执行对象
+        # string ： 要匹配的字符串
+        # count  ： 指定匹配个数
+        # flags  ： 匹配模式
+</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('2ba83fbe-9c22-4c71-b122-ad646815ed3a')"><img id="code_img_closed_2ba83fbe-9c22-4c71-b122-ad646815ed3a" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_2ba83fbe-9c22-4c71-b122-ad646815ed3a" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('2ba83fbe-9c22-4c71-b122-ad646815ed3a',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_2ba83fbe-9c22-4c71-b122-ad646815ed3a" class="cnblogs_code_hide">
+<pre>        <span style="color: #008000;">#</span><span style="color: #008000;"> 与分组无关</span>
+<span style="color: #000000;">
+        origin </span>= <span style="color: #800000;">"</span><span style="color: #800000;">hello alex bcd alex lge alex acd 19</span><span style="color: #800000;">"</span><span style="color: #000000;">
+        r </span>= re.sub(<span style="color: #800000;">"</span><span style="color: #800000;">a\w+</span><span style="color: #800000;">"</span>, <span style="color: #800000;">"</span><span style="color: #800000;">999</span><span style="color: #800000;">"</span>, origin, 2<span style="color: #000000;">)
+        </span><span style="color: #0000ff;">print</span>(r)</pre>
+</div>
+<span class="cnblogs_code_collapse">Demo</span></div>
+<p>split</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">        # split，根据正则匹配分割字符串
+
+        split(pattern, string, maxsplit=0, flags=0)
+        # pattern： 正则模型
+        # string ： 要匹配的字符串
+        # maxsplit：指定分割个数
+        # flags  ： 匹配模式
+</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('35bca42c-d6e9-4b1d-821f-2a9a40b98413')"><img id="code_img_closed_35bca42c-d6e9-4b1d-821f-2a9a40b98413" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_35bca42c-d6e9-4b1d-821f-2a9a40b98413" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('35bca42c-d6e9-4b1d-821f-2a9a40b98413',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_35bca42c-d6e9-4b1d-821f-2a9a40b98413" class="cnblogs_code_hide">
+<pre>        <span style="color: #008000;">#</span><span style="color: #008000;"> 无分组</span>
+        origin = <span style="color: #800000;">"</span><span style="color: #800000;">hello alex bcd alex lge alex acd 19</span><span style="color: #800000;">"</span><span style="color: #000000;">
+        r </span>= re.split(<span style="color: #800000;">"</span><span style="color: #800000;">alex</span><span style="color: #800000;">"</span>, origin, 1<span style="color: #000000;">)
+        </span><span style="color: #0000ff;">print</span><span style="color: #000000;">(r)
+
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> 有分组</span>
+<span style="color: #000000;">        
+        origin </span>= <span style="color: #800000;">"</span><span style="color: #800000;">hello alex bcd alex lge alex acd 19</span><span style="color: #800000;">"</span><span style="color: #000000;">
+        r1 </span>= re.split(<span style="color: #800000;">"</span><span style="color: #800000;">(alex)</span><span style="color: #800000;">"</span>, origin, 1<span style="color: #000000;">)
+        </span><span style="color: #0000ff;">print</span><span style="color: #000000;">(r1)
+        r2 </span>= re.split(<span style="color: #800000;">"</span><span style="color: #800000;">(al(ex))</span><span style="color: #800000;">"</span>, origin, 1<span style="color: #000000;">)
+        </span><span style="color: #0000ff;">print</span>(r2)</pre>
+</div>
+<span class="cnblogs_code_collapse">Demo</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('8cc16280-67b6-4030-9bc7-b070adad470d')"><img id="code_img_closed_8cc16280-67b6-4030-9bc7-b070adad470d" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_8cc16280-67b6-4030-9bc7-b070adad470d" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('8cc16280-67b6-4030-9bc7-b070adad470d',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_8cc16280-67b6-4030-9bc7-b070adad470d" class="cnblogs_code_hide">
+<pre><span style="color: #000000;">IP：
+</span>^(25[0-5]|2[0-4]\d|[0-1]?\d?\d)(\.(25[0-5]|2[0-4]\d|[0-1]?\d?\d)){3<span style="color: #000000;">}$
+手机号：
+</span>^1[3|4|5|8][0-9]\d{8<span style="color: #000000;">}$
+邮箱：
+[a</span>-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+</pre>
+</div>
+<span class="cnblogs_code_collapse">常用正则表达式</span></div>
+<h2>六、序列化</h2>
+<p>Python中用于序列化的两个模块</p>
+<ul>
+<li>json &nbsp; &nbsp; 用于【字符串】和 【python基本数据类型】 间进行转换</li>
+<li>pickle &nbsp; 用于【python特有的类型】 和 【python基本数据类型】间进行转换</li>
+</ul>
+<p>Json模块提供了四个功能：dumps、dump、loads、load</p>
+<p>pickle模块提供了四个功能：dumps、dump、loads、load</p>
+<p>&nbsp;<img src="http://images2015.cnblogs.com/blog/425762/201511/425762-20151114231017087-842020084.png" alt="" width="472" height="381" /></p>
+<h2>七、configparser</h2>
+<p>configparser用于处理特定格式的文件，其本质上是利用open来操作文件。</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('1a773769-9902-499b-a7f7-fcdc9dbd7dbf')"><img id="code_img_closed_1a773769-9902-499b-a7f7-fcdc9dbd7dbf" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_1a773769-9902-499b-a7f7-fcdc9dbd7dbf" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('1a773769-9902-499b-a7f7-fcdc9dbd7dbf',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_1a773769-9902-499b-a7f7-fcdc9dbd7dbf" class="cnblogs_code_hide">
+<pre><span style="color: #000000;"># 注释1
+</span><span style="color: #008000;">;</span><span style="color: #008000;">  注释2</span>
+ 
+<span style="color: #800000; font-weight: bold;">[</span><span style="color: #800000;">section1</span><span style="color: #800000; font-weight: bold;">]</span><span style="color: #000000;"> # 节点
+k1 </span>=<span style="color: #000000;"> v1    # 值
+k2:v2       # 值
+ 
+</span><span style="color: #800000; font-weight: bold;">[</span><span style="color: #800000;">section2</span><span style="color: #800000; font-weight: bold;">]</span><span style="color: #000000;"> # 节点
+k1 </span>= v1    # 值</pre>
+</div>
+<span class="cnblogs_code_collapse">指定格式</span></div>
+<p>1、获取所有节点</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import configparser
+
+config = configparser.ConfigParser()
+config.read('xxxooo', encoding='utf-8')
+ret = config.sections()
+print(ret)
+</pre>
+</div>
+<p>2、获取指定节点下所有的键值对</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import configparser
+
+config = configparser.ConfigParser()
+config.read('xxxooo', encoding='utf-8')
+ret = config.items('section1')
+print(ret)
+</pre>
+</div>
+<p>3、获取指定节点下所有的建</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import configparser
+
+config = configparser.ConfigParser()
+config.read('xxxooo', encoding='utf-8')
+ret = config.options('section1')
+print(ret)
+</pre>
+</div>
+<p>4、获取指定节点下指定key的值</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import configparser
+
+config = configparser.ConfigParser()
+config.read('xxxooo', encoding='utf-8')
+
+
+v = config.get('section1', 'k1')
+# v = config.getint('section1', 'k1')
+# v = config.getfloat('section1', 'k1')
+# v = config.getboolean('section1', 'k1')
+
+print(v)</pre>
+</div>
+<p>5、检查、删除、添加节点</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import configparser
+
+config = configparser.ConfigParser()
+config.read('xxxooo', encoding='utf-8')
+
+
+# 检查
+has_sec = config.has_section('section1')
+print(has_sec)
+
+# 添加节点
+config.add_section("SEC_1")
+config.write(open('xxxooo', 'w'))
+
+# 删除节点
+config.remove_section("SEC_1")
+config.write(open('xxxooo', 'w'))
+</pre>
+</div>
+<p>6、检查、删除、设置指定组内的键值对</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import configparser
+
+config = configparser.ConfigParser()
+config.read('xxxooo', encoding='utf-8')
+
+# 检查
+has_opt = config.has_option('section1', 'k1')
+print(has_opt)
+
+# 删除
+config.remove_option('section1', 'k1')
+config.write(open('xxxooo', 'w'))
+
+# 设置
+config.set('section1', 'k10', "123")
+config.write(open('xxxooo', 'w'))
+</pre>
+</div>
+<h2>八、XML</h2>
+<p>XML是实现不同语言或程序之间进行数据交换的协议，XML文件格式如下：</p>
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">&lt;</span><span style="color: #800000;">data</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">country </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">="Liechtenstein"</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">rank </span><span style="color: #ff0000;">updated</span><span style="color: #0000ff;">="yes"</span><span style="color: #0000ff;">&gt;</span>2<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">rank</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">year</span><span style="color: #0000ff;">&gt;</span>2023<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">year</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">gdppc</span><span style="color: #0000ff;">&gt;</span>141100<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">gdppc</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">neighbor </span><span style="color: #ff0000;">direction</span><span style="color: #0000ff;">="E"</span><span style="color: #ff0000;"> name</span><span style="color: #0000ff;">="Austria"</span> <span style="color: #0000ff;">/&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">neighbor </span><span style="color: #ff0000;">direction</span><span style="color: #0000ff;">="W"</span><span style="color: #ff0000;"> name</span><span style="color: #0000ff;">="Switzerland"</span> <span style="color: #0000ff;">/&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">country</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">country </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">="Singapore"</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">rank </span><span style="color: #ff0000;">updated</span><span style="color: #0000ff;">="yes"</span><span style="color: #0000ff;">&gt;</span>5<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">rank</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">year</span><span style="color: #0000ff;">&gt;</span>2026<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">year</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">gdppc</span><span style="color: #0000ff;">&gt;</span>59900<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">gdppc</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">neighbor </span><span style="color: #ff0000;">direction</span><span style="color: #0000ff;">="N"</span><span style="color: #ff0000;"> name</span><span style="color: #0000ff;">="Malaysia"</span> <span style="color: #0000ff;">/&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">country</span><span style="color: #0000ff;">&gt;</span>
+    <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">country </span><span style="color: #ff0000;">name</span><span style="color: #0000ff;">="Panama"</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">rank </span><span style="color: #ff0000;">updated</span><span style="color: #0000ff;">="yes"</span><span style="color: #0000ff;">&gt;</span>69<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">rank</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">year</span><span style="color: #0000ff;">&gt;</span>2026<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">year</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">gdppc</span><span style="color: #0000ff;">&gt;</span>13600<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">gdppc</span><span style="color: #0000ff;">&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">neighbor </span><span style="color: #ff0000;">direction</span><span style="color: #0000ff;">="W"</span><span style="color: #ff0000;"> name</span><span style="color: #0000ff;">="Costa Rica"</span> <span style="color: #0000ff;">/&gt;</span>
+        <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">neighbor </span><span style="color: #ff0000;">direction</span><span style="color: #0000ff;">="E"</span><span style="color: #ff0000;"> name</span><span style="color: #0000ff;">="Colombia"</span> <span style="color: #0000ff;">/&gt;</span>
+    <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">country</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">data</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+<p><strong>1、解析XML</strong></p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('abb56f70-323a-48ca-b142-e808500be4af')"><img id="code_img_closed_abb56f70-323a-48ca-b142-e808500be4af" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_abb56f70-323a-48ca-b142-e808500be4af" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('abb56f70-323a-48ca-b142-e808500be4af',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_abb56f70-323a-48ca-b142-e808500be4af" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 打开文件，读取XML内容</span>
+str_xml = open(<span style="color: #800000;">'</span><span style="color: #800000;">xo.xml</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">r</span><span style="color: #800000;">'</span><span style="color: #000000;">).read()
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 将字符串解析成xml特殊对象，root代指xml文件的根节点</span>
+root = ET.XML(str_xml)</pre>
+</div>
+<span class="cnblogs_code_collapse">利用ElementTree.XML将字符串解析成xml对象</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('4c5801d5-7b30-4127-b9fb-a6ac2ec8e954')"><img id="code_img_closed_4c5801d5-7b30-4127-b9fb-a6ac2ec8e954" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_4c5801d5-7b30-4127-b9fb-a6ac2ec8e954" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('4c5801d5-7b30-4127-b9fb-a6ac2ec8e954',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_4c5801d5-7b30-4127-b9fb-a6ac2ec8e954" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 直接解析xml文件</span>
+tree = ET.parse(<span style="color: #800000;">"</span><span style="color: #800000;">xo.xml</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 获取xml文件的根节点</span>
+root = tree.getroot()</pre>
+</div>
+<span class="cnblogs_code_collapse">利用ElementTree.parse将文件直接解析成xml对象</span></div>
+<p><strong>2、操作XML</strong></p>
+<p>XML格式类型是节点嵌套节点，对于每一个节点均有以下功能，以便对当前节点进行操作：</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('0625066f-53f2-45b1-b812-3ae5cd1e7f80')"><img id="code_img_closed_0625066f-53f2-45b1-b812-3ae5cd1e7f80" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_0625066f-53f2-45b1-b812-3ae5cd1e7f80" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('0625066f-53f2-45b1-b812-3ae5cd1e7f80',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_0625066f-53f2-45b1-b812-3ae5cd1e7f80" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">class</span><span style="color: #000000;"> Element:
+    </span><span style="color: #800000;">"""</span><span style="color: #800000;">An XML element.
+
+    This class is the reference implementation of the Element interface.
+
+    An element's length is its number of subelements.  That means if you
+    want to check if an element is truly empty, you should check BOTH
+    its length AND its text attribute.
+
+    The element tag, attribute names, and attribute values can be either
+    bytes or strings.
+
+    *tag* is the element name.  *attrib* is an optional dictionary containing
+    element attributes. *extra* are additional element attributes given as
+    keyword arguments.
+
+    Example form:
+        &lt;tag attrib&gt;text&lt;child/&gt;...&lt;/tag&gt;tail
+
+    </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+
+    当前节点的标签名
+    tag </span>=<span style="color: #000000;"> None
+    </span><span style="color: #800000;">"""</span><span style="color: #800000;">The element's name.</span><span style="color: #800000;">"""</span><span style="color: #000000;">
+
+    当前节点的属性
+
+    attrib </span>=<span style="color: #000000;"> None
+    </span><span style="color: #800000;">"""</span><span style="color: #800000;">Dictionary of the element's attributes.</span><span style="color: #800000;">"""</span><span style="color: #000000;">
+
+    当前节点的内容
+    text </span>=<span style="color: #000000;"> None
+    </span><span style="color: #800000;">"""</span><span style="color: #800000;">
+    Text before first subelement. This is either a string or the value None.
+    Note that if there is no text, this attribute may be either
+    None or the empty string, depending on the parser.
+
+    </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+
+    tail </span>=<span style="color: #000000;"> None
+    </span><span style="color: #800000;">"""</span><span style="color: #800000;">
+    Text after this element's end tag, but before the next sibling element's
+    start tag.  This is either a string or the value None.  Note that if there
+    was no text, this attribute may be either None or an empty string,
+    depending on the parser.
+
+    </span><span style="color: #800000;">"""</span>
+
+    <span style="color: #0000ff;">def</span> <span style="color: #800080;">__init__</span>(self, tag, attrib={}, **<span style="color: #000000;">extra):
+        </span><span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span><span style="color: #000000;"> isinstance(attrib, dict):
+            </span><span style="color: #0000ff;">raise</span> TypeError(<span style="color: #800000;">"</span><span style="color: #800000;">attrib must be dict, not %s</span><span style="color: #800000;">"</span> %<span style="color: #000000;"> (
+                attrib.</span><span style="color: #800080;">__class__</span>.<span style="color: #800080;">__name__</span><span style="color: #000000;">,))
+        attrib </span>=<span style="color: #000000;"> attrib.copy()
+        attrib.update(extra)
+        self.tag </span>=<span style="color: #000000;"> tag
+        self.attrib </span>=<span style="color: #000000;"> attrib
+        self._children </span>=<span style="color: #000000;"> []
+
+    </span><span style="color: #0000ff;">def</span> <span style="color: #800080;">__repr__</span><span style="color: #000000;">(self):
+        </span><span style="color: #0000ff;">return</span> <span style="color: #800000;">"</span><span style="color: #800000;">&lt;%s %r at %#x&gt;</span><span style="color: #800000;">"</span> % (self.<span style="color: #800080;">__class__</span>.<span style="color: #800080;">__name__</span><span style="color: #000000;">, self.tag, id(self))
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> makeelement(self, tag, attrib):
+        创建一个新节点
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Create a new element with the same type.
+
+        *tag* is a string containing the element name.
+        *attrib* is a dictionary containing the element attributes.
+
+        Do not call this method, use the SubElement factory function instead.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">return</span> self.<span style="color: #800080;">__class__</span><span style="color: #000000;">(tag, attrib)
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> copy(self):
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Return copy of current element.
+
+        This creates a shallow copy. Subelements will be shared with the
+        original tree.
+
+        </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+        elem </span>=<span style="color: #000000;"> self.makeelement(self.tag, self.attrib)
+        elem.text </span>=<span style="color: #000000;"> self.text
+        elem.tail </span>=<span style="color: #000000;"> self.tail
+        elem[:] </span>=<span style="color: #000000;"> self
+        </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> elem
+
+    </span><span style="color: #0000ff;">def</span> <span style="color: #800080;">__len__</span><span style="color: #000000;">(self):
+        </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> len(self._children)
+
+    </span><span style="color: #0000ff;">def</span> <span style="color: #800080;">__bool__</span><span style="color: #000000;">(self):
+        warnings.warn(
+            </span><span style="color: #800000;">"</span><span style="color: #800000;">The behavior of this method will change in future versions.  </span><span style="color: #800000;">"</span>
+            <span style="color: #800000;">"</span><span style="color: #800000;">Use specific 'len(elem)' or 'elem is not None' test instead.</span><span style="color: #800000;">"</span><span style="color: #000000;">,
+            FutureWarning, stacklevel</span>=2<span style="color: #000000;">
+            )
+        </span><span style="color: #0000ff;">return</span> len(self._children) != 0 <span style="color: #008000;">#</span><span style="color: #008000;"> emulate old behaviour, for now</span>
+
+    <span style="color: #0000ff;">def</span> <span style="color: #800080;">__getitem__</span><span style="color: #000000;">(self, index):
+        </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> self._children[index]
+
+    </span><span style="color: #0000ff;">def</span> <span style="color: #800080;">__setitem__</span><span style="color: #000000;">(self, index, element):
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> if isinstance(index, slice):</span>
+        <span style="color: #008000;">#</span><span style="color: #008000;">     for elt in element:</span>
+        <span style="color: #008000;">#</span><span style="color: #008000;">         assert iselement(elt)</span>
+        <span style="color: #008000;">#</span><span style="color: #008000;"> else:</span>
+        <span style="color: #008000;">#</span><span style="color: #008000;">     assert iselement(element)</span>
+        self._children[index] =<span style="color: #000000;"> element
+
+    </span><span style="color: #0000ff;">def</span> <span style="color: #800080;">__delitem__</span><span style="color: #000000;">(self, index):
+        </span><span style="color: #0000ff;">del</span><span style="color: #000000;"> self._children[index]
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> append(self, subelement):
+        为当前节点追加一个子节点
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Add *subelement* to the end of this element.
+
+        The new element will appear in document order after the last existing
+        subelement (or directly after the text, if it's the first subelement),
+        but before the end tag for this element.
+
+        </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+        self._assert_is_element(subelement)
+        self._children.append(subelement)
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> extend(self, elements):
+        为当前节点扩展 n 个子节点
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Append subelements from a sequence.
+
+        *elements* is a sequence with zero or more elements.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">for</span> element <span style="color: #0000ff;">in</span><span style="color: #000000;"> elements:
+            self._assert_is_element(element)
+        self._children.extend(elements)
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> insert(self, index, subelement):
+        在当前节点的子节点中插入某个节点，即：为当前节点创建子节点，然后插入指定位置
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Insert *subelement* at position *index*.</span><span style="color: #800000;">"""</span><span style="color: #000000;">
+        self._assert_is_element(subelement)
+        self._children.insert(index, subelement)
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> _assert_is_element(self, e):
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> Need to refer to the actual Python implementation, not the</span>
+        <span style="color: #008000;">#</span><span style="color: #008000;"> shadowing C implementation.</span>
+        <span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span><span style="color: #000000;"> isinstance(e, _Element_Py):
+            </span><span style="color: #0000ff;">raise</span> TypeError(<span style="color: #800000;">'</span><span style="color: #800000;">expected an Element, not %s</span><span style="color: #800000;">'</span> % type(e).<span style="color: #800080;">__name__</span><span style="color: #000000;">)
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> remove(self, subelement):
+        在当前节点在子节点中删除某个节点
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Remove matching subelement.
+
+        Unlike the find methods, this method compares elements based on
+        identity, NOT ON tag value or contents.  To remove subelements by
+        other means, the easiest way is to use a list comprehension to
+        select what elements to keep, and then use slice assignment to update
+        the parent element.
+
+        ValueError is raised if a matching element could not be found.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #008000;">#</span><span style="color: #008000;"> assert iselement(element)</span>
+<span style="color: #000000;">        self._children.remove(subelement)
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> getchildren(self):
+        获取所有的子节点（废弃）
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">(Deprecated) Return all subelements.
+
+        Elements are returned in document order.
+
+        </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+        warnings.warn(
+            </span><span style="color: #800000;">"</span><span style="color: #800000;">This method will be removed in future versions.  </span><span style="color: #800000;">"</span>
+            <span style="color: #800000;">"</span><span style="color: #800000;">Use 'list(elem)' or iteration over elem instead.</span><span style="color: #800000;">"</span><span style="color: #000000;">,
+            DeprecationWarning, stacklevel</span>=2<span style="color: #000000;">
+            )
+        </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> self._children
+
+    </span><span style="color: #0000ff;">def</span> find(self, path, namespaces=<span style="color: #000000;">None):
+        获取第一个寻找到的子节点
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Find first matching element by tag name or path.
+
+        *path* is a string having either an element tag or an XPath,
+        *namespaces* is an optional mapping from namespace prefix to full name.
+
+        Return the first matching element, or None if no element was found.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">return</span><span style="color: #000000;"> ElementPath.find(self, path, namespaces)
+
+    </span><span style="color: #0000ff;">def</span> findtext(self, path, default=None, namespaces=<span style="color: #000000;">None):
+        获取第一个寻找到的子节点的内容
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Find text for first matching element by tag name or path.
+
+        *path* is a string having either an element tag or an XPath,
+        *default* is the value to return if the element was not found,
+        *namespaces* is an optional mapping from namespace prefix to full name.
+
+        Return text content of first matching element, or default value if
+        none was found.  Note that if an element is found having no text
+        content, the empty string is returned.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">return</span><span style="color: #000000;"> ElementPath.findtext(self, path, default, namespaces)
+
+    </span><span style="color: #0000ff;">def</span> findall(self, path, namespaces=<span style="color: #000000;">None):
+        获取所有的子节点
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Find all matching subelements by tag name or path.
+
+        *path* is a string having either an element tag or an XPath,
+        *namespaces* is an optional mapping from namespace prefix to full name.
+
+        Returns list containing all matching elements in document order.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">return</span><span style="color: #000000;"> ElementPath.findall(self, path, namespaces)
+
+    </span><span style="color: #0000ff;">def</span> iterfind(self, path, namespaces=<span style="color: #000000;">None):
+        获取所有指定的节点，并创建一个迭代器（可以被for循环）
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Find all matching subelements by tag name or path.
+
+        *path* is a string having either an element tag or an XPath,
+        *namespaces* is an optional mapping from namespace prefix to full name.
+
+        Return an iterable yielding all matching elements in document order.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">return</span><span style="color: #000000;"> ElementPath.iterfind(self, path, namespaces)
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> clear(self):
+        清空节点
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Reset element.
+
+        This function removes all subelements, clears all attributes, and sets
+        the text and tail attributes to None.
+
+        </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+        self.attrib.clear()
+        self._children </span>=<span style="color: #000000;"> []
+        self.text </span>= self.tail =<span style="color: #000000;"> None
+
+    </span><span style="color: #0000ff;">def</span> get(self, key, default=<span style="color: #000000;">None):
+        获取当前节点的属性值
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Get element attribute.
+
+        Equivalent to attrib.get, but some implementations may handle this a
+        bit more efficiently.  *key* is what attribute to look for, and
+        *default* is what to return if the attribute was not found.
+
+        Returns a string containing the attribute value, or the default if
+        attribute was not found.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">return</span><span style="color: #000000;"> self.attrib.get(key, default)
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> set(self, key, value):
+        为当前节点设置属性值
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Set element attribute.
+
+        Equivalent to attrib[key] = value, but some implementations may handle
+        this a bit more efficiently.  *key* is what attribute to set, and
+        *value* is the attribute value to set it to.
+
+        </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+        self.attrib[key] </span>=<span style="color: #000000;"> value
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> keys(self):
+        获取当前节点的所有属性的 key
+
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Get list of attribute names.
+
+        Names are returned in an arbitrary order, just like an ordinary
+        Python dict.  Equivalent to attrib.keys()
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">return</span><span style="color: #000000;"> self.attrib.keys()
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> items(self):
+        获取当前节点的所有属性值，每个属性都是一个键值对
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Get element attributes as a sequence.
+
+        The attributes are returned in arbitrary order.  Equivalent to
+        attrib.items().
+
+        Return a list of (name, value) tuples.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">return</span><span style="color: #000000;"> self.attrib.items()
+
+    </span><span style="color: #0000ff;">def</span> iter(self, tag=<span style="color: #000000;">None):
+        在当前节点的子孙中根据节点名称寻找所有指定的节点，并返回一个迭代器（可以被for循环）。
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Create tree iterator.
+
+        The iterator loops over the element and all subelements in document
+        order, returning all elements with a matching tag.
+
+        If the tree structure is modified during iteration, new or removed
+        elements may or may not be included.  To get a stable set, use the
+        list() function on the iterator, and loop over the resulting list.
+
+        *tag* is what tags to look for (default is to return all elements)
+
+        Return an iterator containing all the matching elements.
+
+        </span><span style="color: #800000;">"""</span>
+        <span style="color: #0000ff;">if</span> tag == <span style="color: #800000;">"</span><span style="color: #800000;">*</span><span style="color: #800000;">"</span><span style="color: #000000;">:
+            tag </span>=<span style="color: #000000;"> None
+        </span><span style="color: #0000ff;">if</span> tag <span style="color: #0000ff;">is</span> None <span style="color: #0000ff;">or</span> self.tag ==<span style="color: #000000;"> tag:
+            </span><span style="color: #0000ff;">yield</span><span style="color: #000000;"> self
+        </span><span style="color: #0000ff;">for</span> e <span style="color: #0000ff;">in</span><span style="color: #000000;"> self._children:
+            </span><span style="color: #0000ff;">yield</span> <span style="color: #0000ff;">from</span><span style="color: #000000;"> e.iter(tag)
+
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> compatibility</span>
+    <span style="color: #0000ff;">def</span> getiterator(self, tag=<span style="color: #000000;">None):
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> Change for a DeprecationWarning in 1.4</span>
+<span style="color: #000000;">        warnings.warn(
+            </span><span style="color: #800000;">"</span><span style="color: #800000;">This method will be removed in future versions.  </span><span style="color: #800000;">"</span>
+            <span style="color: #800000;">"</span><span style="color: #800000;">Use 'elem.iter()' or 'list(elem.iter())' instead.</span><span style="color: #800000;">"</span><span style="color: #000000;">,
+            PendingDeprecationWarning, stacklevel</span>=2<span style="color: #000000;">
+        )
+        </span><span style="color: #0000ff;">return</span><span style="color: #000000;"> list(self.iter(tag))
+
+    </span><span style="color: #0000ff;">def</span><span style="color: #000000;"> itertext(self):
+        在当前节点的子孙中根据节点名称寻找所有指定的节点的内容，并返回一个迭代器（可以被for循环）。
+        </span><span style="color: #800000;">"""</span><span style="color: #800000;">Create text iterator.
+
+        The iterator loops over the element and all subelements in document
+        order, returning all inner text.
+
+        </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+        tag </span>=<span style="color: #000000;"> self.tag
+        </span><span style="color: #0000ff;">if</span> <span style="color: #0000ff;">not</span> isinstance(tag, str) <span style="color: #0000ff;">and</span> tag <span style="color: #0000ff;">is</span> <span style="color: #0000ff;">not</span><span style="color: #000000;"> None:
+            </span><span style="color: #0000ff;">return</span>
+        <span style="color: #0000ff;">if</span><span style="color: #000000;"> self.text:
+            </span><span style="color: #0000ff;">yield</span><span style="color: #000000;"> self.text
+        </span><span style="color: #0000ff;">for</span> e <span style="color: #0000ff;">in</span><span style="color: #000000;"> self:
+            </span><span style="color: #0000ff;">yield</span> <span style="color: #0000ff;">from</span><span style="color: #000000;"> e.itertext()
+            </span><span style="color: #0000ff;">if</span><span style="color: #000000;"> e.tail:
+                </span><span style="color: #0000ff;">yield</span> e.tail</pre>
+</div>
+<span class="cnblogs_code_collapse">节点功能一览表</span></div>
+<blockquote>
+<p>由于 每个节点 都具有以上的方法，并且在上一步骤中解析时均得到了root（xml文件的根节点），so &nbsp; 可以利用以上方法进行操作xml文件。</p>
+<p>a.&nbsp;遍历XML文档的所有内容</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('db2db19c-dfcf-4baf-a071-54a7c79e1cfc')"><img id="code_img_closed_db2db19c-dfcf-4baf-a071-54a7c79e1cfc" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_db2db19c-dfcf-4baf-a071-54a7c79e1cfc" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('db2db19c-dfcf-4baf-a071-54a7c79e1cfc',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_db2db19c-dfcf-4baf-a071-54a7c79e1cfc" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 解析方式一 ############</span>
+<span style="color: #800000;">"""</span><span style="color: #800000;">
+# 打开文件，读取XML内容
+str_xml = open('xo.xml', 'r').read()
+
+# 将字符串解析成xml特殊对象，root代指xml文件的根节点
+root = ET.XML(str_xml)
+</span><span style="color: #800000;">"""</span>
+<span style="color: #008000;">#</span><span style="color: #008000;">########### 解析方式二 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 直接解析xml文件</span>
+tree = ET.parse(<span style="color: #800000;">"</span><span style="color: #800000;">xo.xml</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 获取xml文件的根节点</span>
+root =<span style="color: #000000;"> tree.getroot()
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">## 操作</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 顶层标签</span>
+<span style="color: #0000ff;">print</span><span style="color: #000000;">(root.tag)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 遍历XML文档的第二层</span>
+<span style="color: #0000ff;">for</span> child <span style="color: #0000ff;">in</span><span style="color: #000000;"> root:
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 第二层节点的标签名称和标签属性</span>
+    <span style="color: #0000ff;">print</span><span style="color: #000000;">(child.tag, child.attrib)
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 遍历XML文档的第三层</span>
+    <span style="color: #0000ff;">for</span> i <span style="color: #0000ff;">in</span><span style="color: #000000;"> child:
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> 第二层节点的标签名称和内容</span>
+        <span style="color: #0000ff;">print</span>(i.tag,i.text)</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>b、遍历XML中指定的节点</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('5af4bc52-69fb-4c82-bb63-9159e7f9b481')"><img id="code_img_closed_5af4bc52-69fb-4c82-bb63-9159e7f9b481" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_5af4bc52-69fb-4c82-bb63-9159e7f9b481" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('5af4bc52-69fb-4c82-bb63-9159e7f9b481',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_5af4bc52-69fb-4c82-bb63-9159e7f9b481" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 解析方式一 ############</span>
+<span style="color: #800000;">"""</span><span style="color: #800000;">
+# 打开文件，读取XML内容
+str_xml = open('xo.xml', 'r').read()
+
+# 将字符串解析成xml特殊对象，root代指xml文件的根节点
+root = ET.XML(str_xml)
+</span><span style="color: #800000;">"""</span>
+<span style="color: #008000;">#</span><span style="color: #008000;">########### 解析方式二 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 直接解析xml文件</span>
+tree = ET.parse(<span style="color: #800000;">"</span><span style="color: #800000;">xo.xml</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 获取xml文件的根节点</span>
+root =<span style="color: #000000;"> tree.getroot()
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">## 操作</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 顶层标签</span>
+<span style="color: #0000ff;">print</span><span style="color: #000000;">(root.tag)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 遍历XML中所有的year节点</span>
+<span style="color: #0000ff;">for</span> node <span style="color: #0000ff;">in</span> root.iter(<span style="color: #800000;">'</span><span style="color: #800000;">year</span><span style="color: #800000;">'</span><span style="color: #000000;">):
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 节点的标签名称和内容</span>
+    <span style="color: #0000ff;">print</span>(node.tag, node.text)</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>c、修改节点内容</p>
+<p>由于修改的节点时，均是在内存中进行，其不会影响文件中的内容。所以，如果想要修改，则需要重新将内存中的内容写到文件。</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('f42526b0-bb36-49fa-aae4-e9647812da93')"><img id="code_img_closed_f42526b0-bb36-49fa-aae4-e9647812da93" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_f42526b0-bb36-49fa-aae4-e9647812da93" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('f42526b0-bb36-49fa-aae4-e9647812da93',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_f42526b0-bb36-49fa-aae4-e9647812da93" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 解析方式一 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 打开文件，读取XML内容</span>
+str_xml = open(<span style="color: #800000;">'</span><span style="color: #800000;">xo.xml</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">r</span><span style="color: #800000;">'</span><span style="color: #000000;">).read()
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 将字符串解析成xml特殊对象，root代指xml文件的根节点</span>
+root =<span style="color: #000000;"> ET.XML(str_xml)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 操作 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 顶层标签</span>
+<span style="color: #0000ff;">print</span><span style="color: #000000;">(root.tag)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 循环所有的year节点</span>
+<span style="color: #0000ff;">for</span> node <span style="color: #0000ff;">in</span> root.iter(<span style="color: #800000;">'</span><span style="color: #800000;">year</span><span style="color: #800000;">'</span><span style="color: #000000;">):
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 将year节点中的内容自增一</span>
+    new_year = int(node.text) + 1<span style="color: #000000;">
+    node.text </span>=<span style="color: #000000;"> str(new_year)
+
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 设置属性</span>
+    node.set(<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">alex</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+    node.set(</span><span style="color: #800000;">'</span><span style="color: #800000;">age</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">18</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 删除属性</span>
+    <span style="color: #0000ff;">del</span> node.attrib[<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span><span style="color: #000000;">]
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 保存文件 ############</span>
+tree =<span style="color: #000000;"> ET.ElementTree(root)
+tree.write(</span><span style="color: #800000;">"</span><span style="color: #800000;">newnew.xml</span><span style="color: #800000;">"</span>, encoding=<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">解析字符串方式，修改，保存</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('0fb8ab1a-d1e5-4a7c-bc1b-be545322c59a')"><img id="code_img_closed_0fb8ab1a-d1e5-4a7c-bc1b-be545322c59a" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_0fb8ab1a-d1e5-4a7c-bc1b-be545322c59a" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('0fb8ab1a-d1e5-4a7c-bc1b-be545322c59a',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_0fb8ab1a-d1e5-4a7c-bc1b-be545322c59a" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 解析方式二 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 直接解析xml文件</span>
+tree = ET.parse(<span style="color: #800000;">"</span><span style="color: #800000;">xo.xml</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 获取xml文件的根节点</span>
+root =<span style="color: #000000;"> tree.getroot()
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 操作 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 顶层标签</span>
+<span style="color: #0000ff;">print</span><span style="color: #000000;">(root.tag)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 循环所有的year节点</span>
+<span style="color: #0000ff;">for</span> node <span style="color: #0000ff;">in</span> root.iter(<span style="color: #800000;">'</span><span style="color: #800000;">year</span><span style="color: #800000;">'</span><span style="color: #000000;">):
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 将year节点中的内容自增一</span>
+    new_year = int(node.text) + 1<span style="color: #000000;">
+    node.text </span>=<span style="color: #000000;"> str(new_year)
+
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 设置属性</span>
+    node.set(<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">alex</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+    node.set(</span><span style="color: #800000;">'</span><span style="color: #800000;">age</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">18</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 删除属性</span>
+    <span style="color: #0000ff;">del</span> node.attrib[<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span><span style="color: #000000;">]
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 保存文件 ############</span>
+tree.write(<span style="color: #800000;">"</span><span style="color: #800000;">newnew.xml</span><span style="color: #800000;">"</span>, encoding=<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">解析文件方式，修改，保存</span></div>
+<p>d、删除节点</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('b94b2b04-9423-40f4-b385-0312561ce20a')"><img id="code_img_closed_b94b2b04-9423-40f4-b385-0312561ce20a" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_b94b2b04-9423-40f4-b385-0312561ce20a" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('b94b2b04-9423-40f4-b385-0312561ce20a',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_b94b2b04-9423-40f4-b385-0312561ce20a" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 解析字符串方式打开 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 打开文件，读取XML内容</span>
+str_xml = open(<span style="color: #800000;">'</span><span style="color: #800000;">xo.xml</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">r</span><span style="color: #800000;">'</span><span style="color: #000000;">).read()
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 将字符串解析成xml特殊对象，root代指xml文件的根节点</span>
+root =<span style="color: #000000;"> ET.XML(str_xml)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 操作 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 顶层标签</span>
+<span style="color: #0000ff;">print</span><span style="color: #000000;">(root.tag)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 遍历data下的所有country节点</span>
+<span style="color: #0000ff;">for</span> country <span style="color: #0000ff;">in</span> root.findall(<span style="color: #800000;">'</span><span style="color: #800000;">country</span><span style="color: #800000;">'</span><span style="color: #000000;">):
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 获取每一个country节点下rank节点的内容</span>
+    rank = int(country.find(<span style="color: #800000;">'</span><span style="color: #800000;">rank</span><span style="color: #800000;">'</span><span style="color: #000000;">).text)
+
+    </span><span style="color: #0000ff;">if</span> rank &gt; 50<span style="color: #000000;">:
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> 删除指定country节点</span>
+<span style="color: #000000;">        root.remove(country)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 保存文件 ############</span>
+tree =<span style="color: #000000;"> ET.ElementTree(root)
+tree.write(</span><span style="color: #800000;">"</span><span style="color: #800000;">newnew.xml</span><span style="color: #800000;">"</span>, encoding=<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">解析字符串方式打开，删除，保存</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('ce39fd96-9fa2-4f47-9c3f-014fe33e2968')"><img id="code_img_closed_ce39fd96-9fa2-4f47-9c3f-014fe33e2968" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_ce39fd96-9fa2-4f47-9c3f-014fe33e2968" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('ce39fd96-9fa2-4f47-9c3f-014fe33e2968',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_ce39fd96-9fa2-4f47-9c3f-014fe33e2968" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 解析文件方式 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 直接解析xml文件</span>
+tree = ET.parse(<span style="color: #800000;">"</span><span style="color: #800000;">xo.xml</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 获取xml文件的根节点</span>
+root =<span style="color: #000000;"> tree.getroot()
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 操作 ############</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 顶层标签</span>
+<span style="color: #0000ff;">print</span><span style="color: #000000;">(root.tag)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 遍历data下的所有country节点</span>
+<span style="color: #0000ff;">for</span> country <span style="color: #0000ff;">in</span> root.findall(<span style="color: #800000;">'</span><span style="color: #800000;">country</span><span style="color: #800000;">'</span><span style="color: #000000;">):
+    </span><span style="color: #008000;">#</span><span style="color: #008000;"> 获取每一个country节点下rank节点的内容</span>
+    rank = int(country.find(<span style="color: #800000;">'</span><span style="color: #800000;">rank</span><span style="color: #800000;">'</span><span style="color: #000000;">).text)
+
+    </span><span style="color: #0000ff;">if</span> rank &gt; 50<span style="color: #000000;">:
+        </span><span style="color: #008000;">#</span><span style="color: #008000;"> 删除指定country节点</span>
+<span style="color: #000000;">        root.remove(country)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;">########### 保存文件 ############</span>
+tree.write(<span style="color: #800000;">"</span><span style="color: #800000;">newnew.xml</span><span style="color: #800000;">"</span>, encoding=<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">解析文件方式打开，删除，保存</span></div>
+</blockquote>
+<p><strong>3、创建XML文档</strong></p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('5b2a1efd-d7b2-414e-9a29-5047ef620a25')"><img id="code_img_closed_5b2a1efd-d7b2-414e-9a29-5047ef620a25" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_5b2a1efd-d7b2-414e-9a29-5047ef620a25" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('5b2a1efd-d7b2-414e-9a29-5047ef620a25',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_5b2a1efd-d7b2-414e-9a29-5047ef620a25" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建根节点</span>
+root = ET.Element(<span style="color: #800000;">"</span><span style="color: #800000;">famliy</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建节点大儿子</span>
+son1 = ET.Element(<span style="color: #800000;">'</span><span style="color: #800000;">son</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿1</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建小儿子</span>
+son2 = ET.Element(<span style="color: #800000;">'</span><span style="color: #800000;">son</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">"</span><span style="color: #800000;">name</span><span style="color: #800000;">"</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿2</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 在大儿子中创建两个孙子</span>
+grandson1 = ET.Element(<span style="color: #800000;">'</span><span style="color: #800000;">grandson</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿11</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+grandson2 </span>= ET.Element(<span style="color: #800000;">'</span><span style="color: #800000;">grandson</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿12</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+son1.append(grandson1)
+son1.append(grandson2)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 把儿子添加到根节点中</span>
+<span style="color: #000000;">root.append(son1)
+root.append(son1)
+
+tree </span>=<span style="color: #000000;"> ET.ElementTree(root)
+tree.write(</span><span style="color: #800000;">'</span><span style="color: #800000;">oooo.xml</span><span style="color: #800000;">'</span>,encoding=<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span>, short_empty_elements=False)</pre>
+</div>
+<span class="cnblogs_code_collapse">创建方式（一）</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('ed29016a-7030-4152-a741-c155ba26b2b8')"><img id="code_img_closed_ed29016a-7030-4152-a741-c155ba26b2b8" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_ed29016a-7030-4152-a741-c155ba26b2b8" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('ed29016a-7030-4152-a741-c155ba26b2b8',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_ed29016a-7030-4152-a741-c155ba26b2b8" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建根节点</span>
+root = ET.Element(<span style="color: #800000;">"</span><span style="color: #800000;">famliy</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建大儿子</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> son1 = ET.Element('son', {'name': '儿1'})</span>
+son1 = root.makeelement(<span style="color: #800000;">'</span><span style="color: #800000;">son</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿1</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建小儿子</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> son2 = ET.Element('son', {"name": '儿2'})</span>
+son2 = root.makeelement(<span style="color: #800000;">'</span><span style="color: #800000;">son</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">"</span><span style="color: #800000;">name</span><span style="color: #800000;">"</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿2</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 在大儿子中创建两个孙子</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> grandson1 = ET.Element('grandson', {'name': '儿11'})</span>
+grandson1 = son1.makeelement(<span style="color: #800000;">'</span><span style="color: #800000;">grandson</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿11</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> grandson2 = ET.Element('grandson', {'name': '儿12'})</span>
+grandson2 = son1.makeelement(<span style="color: #800000;">'</span><span style="color: #800000;">grandson</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿12</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+
+son1.append(grandson1)
+son1.append(grandson2)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 把儿子添加到根节点中</span>
+<span style="color: #000000;">root.append(son1)
+root.append(son1)
+
+tree </span>=<span style="color: #000000;"> ET.ElementTree(root)
+tree.write(</span><span style="color: #800000;">'</span><span style="color: #800000;">oooo.xml</span><span style="color: #800000;">'</span>,encoding=<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span>, short_empty_elements=False)</pre>
+</div>
+<span class="cnblogs_code_collapse">创建方式（二）</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('fafa4d32-42c0-4103-81c8-00b88b88dfe1')"><img id="code_img_closed_fafa4d32-42c0-4103-81c8-00b88b88dfe1" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_fafa4d32-42c0-4103-81c8-00b88b88dfe1" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('fafa4d32-42c0-4103-81c8-00b88b88dfe1',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_fafa4d32-42c0-4103-81c8-00b88b88dfe1" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建根节点</span>
+root = ET.Element(<span style="color: #800000;">"</span><span style="color: #800000;">famliy</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建节点大儿子</span>
+son1 = ET.SubElement(root, <span style="color: #800000;">"</span><span style="color: #800000;">son</span><span style="color: #800000;">"</span>, attrib={<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿1</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建小儿子</span>
+son2 = ET.SubElement(root, <span style="color: #800000;">"</span><span style="color: #800000;">son</span><span style="color: #800000;">"</span>, attrib={<span style="color: #800000;">"</span><span style="color: #800000;">name</span><span style="color: #800000;">"</span>: <span style="color: #800000;">"</span><span style="color: #800000;">儿2</span><span style="color: #800000;">"</span><span style="color: #000000;">})
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 在大儿子中创建一个孙子</span>
+grandson1 = ET.SubElement(son1, <span style="color: #800000;">"</span><span style="color: #800000;">age</span><span style="color: #800000;">"</span>, attrib={<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿11</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+grandson1.text </span>= <span style="color: #800000;">'</span><span style="color: #800000;">孙子</span><span style="color: #800000;">'</span><span style="color: #000000;">
+
+
+et </span>= ET.ElementTree(root)  <span style="color: #008000;">#</span><span style="color: #008000;">生成文档对象</span>
+et.write(<span style="color: #800000;">"</span><span style="color: #800000;">test.xml</span><span style="color: #800000;">"</span>, encoding=<span style="color: #800000;">"</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">"</span>, xml_declaration=True, short_empty_elements=False)</pre>
+</div>
+<span class="cnblogs_code_collapse">创建方式（三）</span></div>
+<p>由于原生保存的XML时默认无缩进，如果想要设置缩进的话， 需要修改保存方式：</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('fac519ad-7346-4bd9-9c5d-ecdf2da5392f')"><img id="code_img_closed_fac519ad-7346-4bd9-9c5d-ecdf2da5392f" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_fac519ad-7346-4bd9-9c5d-ecdf2da5392f" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('fac519ad-7346-4bd9-9c5d-ecdf2da5392f',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_fac519ad-7346-4bd9-9c5d-ecdf2da5392f" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+</span><span style="color: #0000ff;">from</span> xml.dom <span style="color: #0000ff;">import</span><span style="color: #000000;"> minidom
+
+
+</span><span style="color: #0000ff;">def</span><span style="color: #000000;"> prettify(elem):
+    </span><span style="color: #800000;">"""</span><span style="color: #800000;">将节点转换成字符串，并添加缩进。
+    </span><span style="color: #800000;">"""</span><span style="color: #000000;">
+    rough_string </span>= ET.tostring(elem, <span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+    reparsed </span>=<span style="color: #000000;"> minidom.parseString(rough_string)
+    </span><span style="color: #0000ff;">return</span> reparsed.toprettyxml(indent=<span style="color: #800000;">"</span><span style="color: #800000;">\t</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建根节点</span>
+root = ET.Element(<span style="color: #800000;">"</span><span style="color: #800000;">famliy</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建大儿子</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> son1 = ET.Element('son', {'name': '儿1'})</span>
+son1 = root.makeelement(<span style="color: #800000;">'</span><span style="color: #800000;">son</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿1</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 创建小儿子</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> son2 = ET.Element('son', {"name": '儿2'})</span>
+son2 = root.makeelement(<span style="color: #800000;">'</span><span style="color: #800000;">son</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">"</span><span style="color: #800000;">name</span><span style="color: #800000;">"</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿2</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 在大儿子中创建两个孙子</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> grandson1 = ET.Element('grandson', {'name': '儿11'})</span>
+grandson1 = son1.makeelement(<span style="color: #800000;">'</span><span style="color: #800000;">grandson</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿11</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> grandson2 = ET.Element('grandson', {'name': '儿12'})</span>
+grandson2 = son1.makeelement(<span style="color: #800000;">'</span><span style="color: #800000;">grandson</span><span style="color: #800000;">'</span>, {<span style="color: #800000;">'</span><span style="color: #800000;">name</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">儿12</span><span style="color: #800000;">'</span><span style="color: #000000;">})
+
+son1.append(grandson1)
+son1.append(grandson2)
+
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 把儿子添加到根节点中</span>
+<span style="color: #000000;">root.append(son1)
+root.append(son1)
+
+
+raw_str </span>=<span style="color: #000000;"> prettify(root)
+
+f </span>= open(<span style="color: #800000;">"</span><span style="color: #800000;">xxxoo.xml</span><span style="color: #800000;">"</span>,<span style="color: #800000;">'</span><span style="color: #800000;">w</span><span style="color: #800000;">'</span>,encoding=<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+f.write(raw_str)
+f.close()</span></pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p><strong><span style="line-height: 1.5;">4、命名空间</span></strong></p>
+<p><span style="line-height: 1.5;">详细介绍，<a href="http://www.w3school.com.cn/xml/xml_namespaces.asp" target="_blank">猛击这里</a></span></p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('d1a6c8a7-04cf-403f-a93c-c42242ae828a')"><img id="code_img_closed_d1a6c8a7-04cf-403f-a93c-c42242ae828a" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_d1a6c8a7-04cf-403f-a93c-c42242ae828a" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('d1a6c8a7-04cf-403f-a93c-c42242ae828a',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_d1a6c8a7-04cf-403f-a93c-c42242ae828a" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+ET.register_namespace(</span><span style="color: #800000;">'</span><span style="color: #800000;">com</span><span style="color: #800000;">'</span>,<span style="color: #800000;">"</span><span style="color: #800000;">http://www.company.com</span><span style="color: #800000;">"</span>) <span style="color: #008000;">#</span><span style="color: #008000;">some name</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> build a tree structure</span>
+root = ET.Element(<span style="color: #800000;">"</span><span style="color: #800000;">{http://www.company.com}STUFF</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+body </span>= ET.SubElement(root, <span style="color: #800000;">"</span><span style="color: #800000;">{http://www.company.com}MORE_STUFF</span><span style="color: #800000;">"</span>, attrib={<span style="color: #800000;">"</span><span style="color: #800000;">{http://www.company.com}hhh</span><span style="color: #800000;">"</span>: <span style="color: #800000;">"</span><span style="color: #800000;">123</span><span style="color: #800000;">"</span><span style="color: #000000;">})
+body.text </span>= <span style="color: #800000;">"</span><span style="color: #800000;">STUFF EVERYWHERE!</span><span style="color: #800000;">"</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> wrap it in an ElementTree instance, and save as XML</span>
+tree =<span style="color: #000000;"> ET.ElementTree(root)
+
+tree.write(</span><span style="color: #800000;">"</span><span style="color: #800000;">page.xml</span><span style="color: #800000;">"</span><span style="color: #000000;">,
+           xml_declaration</span>=<span style="color: #000000;">True,
+           encoding</span>=<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span><span style="color: #000000;">,
+           method</span>=<span style="color: #800000;">"</span><span style="color: #800000;">xml</span><span style="color: #800000;">"</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">命名空间</span></div>
+<h2><span style="line-height: 1.5;">九、requests</span></h2>
+<p><span style="line-height: 1.5;">Python标准库中提供了：urllib等模块以供Http请求，但是，它的 API 太渣了。它是为另一个时代、另一个互联网所创建的。它需要巨量的工作，甚至包括各种方法覆盖，来完成最简单的任务。</span></p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('55b05d04-019e-46ab-80f2-d85aec0055eb')"><img id="code_img_closed_55b05d04-019e-46ab-80f2-d85aec0055eb" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_55b05d04-019e-46ab-80f2-d85aec0055eb" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('55b05d04-019e-46ab-80f2-d85aec0055eb',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_55b05d04-019e-46ab-80f2-d85aec0055eb" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> urllib.request
+
+
+f </span>= urllib.request.urlopen(<span style="color: #800000;">'</span><span style="color: #800000;">http://www.webxml.com.cn//webservices/qqOnlineWebService.asmx/qqCheckOnline?qqCode=424662508</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+result </span>= f.read().decode(<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">发送GET请求</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('358677b9-7aee-4821-b066-3de9538c4417')"><img id="code_img_closed_358677b9-7aee-4821-b066-3de9538c4417" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_358677b9-7aee-4821-b066-3de9538c4417" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('358677b9-7aee-4821-b066-3de9538c4417',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_358677b9-7aee-4821-b066-3de9538c4417" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> urllib.request
+
+req </span>= urllib.request.Request(<span style="color: #800000;">'</span><span style="color: #800000;">http://www.example.com/</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+req.add_header(</span><span style="color: #800000;">'</span><span style="color: #800000;">Referer</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">http://www.python.org/</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+r </span>=<span style="color: #000000;"> urllib.request.urlopen(req)
+
+result </span>= f.read().decode(<span style="color: #800000;">'</span><span style="color: #800000;">utf-8</span><span style="color: #800000;">'</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">发送携带请求头的GET请求</span></div>
+<p><em><span style="color: #888888;">注：更多见Python官方文档：https://docs.python.org/3.5/library/urllib.request.html#module-urllib.request</span></em></p>
+<p>Requests 是使用 Apache2 Licensed 许可证的 基于Python开发的HTTP 库，其在Python内置模块的基础上进行了高度的封装，从而使得Pythoner进行网络请求时，变得美好了许多，使用Requests可以轻而易举的完成浏览器可有的任何操作。</p>
+<p>1、安装模块</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">pip3 install requests
+</pre>
+</div>
+<p>2、使用模块</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('289a46a0-b34b-41ea-a026-c4418e434626')"><img id="code_img_closed_289a46a0-b34b-41ea-a026-c4418e434626" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_289a46a0-b34b-41ea-a026-c4418e434626" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('289a46a0-b34b-41ea-a026-c4418e434626',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_289a46a0-b34b-41ea-a026-c4418e434626" class="cnblogs_code_hide">
+<pre><span style="color: #008000;">#</span><span style="color: #008000;"> 1、无参数实例</span>
+ 
+<span style="color: #0000ff;">import</span><span style="color: #000000;"> requests
+ 
+ret </span>= requests.get(<span style="color: #800000;">'</span><span style="color: #800000;">https://github.com/timeline.json</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+ 
+</span><span style="color: #0000ff;">print</span><span style="color: #000000;">(ret.url)
+</span><span style="color: #0000ff;">print</span><span style="color: #000000;">(ret.text)
+ 
+ 
+ 
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 2、有参数实例</span>
+ 
+<span style="color: #0000ff;">import</span><span style="color: #000000;"> requests
+ 
+payload </span>= {<span style="color: #800000;">'</span><span style="color: #800000;">key1</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">value1</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">key2</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">value2</span><span style="color: #800000;">'</span><span style="color: #000000;">}
+ret </span>= requests.get(<span style="color: #800000;">"</span><span style="color: #800000;">http://httpbin.org/get</span><span style="color: #800000;">"</span>, params=<span style="color: #000000;">payload)
+ 
+</span><span style="color: #0000ff;">print</span><span style="color: #000000;">(ret.url)
+</span><span style="color: #0000ff;">print</span>(ret.text)</pre>
+</div>
+<span class="cnblogs_code_collapse">GET请求</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('0ee8a2fc-4d3e-494d-bb44-8a8ba05ce502')"><img id="code_img_closed_0ee8a2fc-4d3e-494d-bb44-8a8ba05ce502" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_0ee8a2fc-4d3e-494d-bb44-8a8ba05ce502" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('0ee8a2fc-4d3e-494d-bb44-8a8ba05ce502',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_0ee8a2fc-4d3e-494d-bb44-8a8ba05ce502" class="cnblogs_code_hide">
+<pre><span style="color: #008000;">#</span><span style="color: #008000;"> 1、基本POST实例</span>
+ 
+<span style="color: #0000ff;">import</span><span style="color: #000000;"> requests
+ 
+payload </span>= {<span style="color: #800000;">'</span><span style="color: #800000;">key1</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">value1</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">key2</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">value2</span><span style="color: #800000;">'</span><span style="color: #000000;">}
+ret </span>= requests.post(<span style="color: #800000;">"</span><span style="color: #800000;">http://httpbin.org/post</span><span style="color: #800000;">"</span>, data=<span style="color: #000000;">payload)
+ 
+</span><span style="color: #0000ff;">print</span><span style="color: #000000;">(ret.text)
+ 
+ 
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 2、发送请求头和数据实例</span>
+ 
+<span style="color: #0000ff;">import</span><span style="color: #000000;"> requests
+</span><span style="color: #0000ff;">import</span><span style="color: #000000;"> json
+ 
+url </span>= <span style="color: #800000;">'</span><span style="color: #800000;">https://api.github.com/some/endpoint</span><span style="color: #800000;">'</span><span style="color: #000000;">
+payload </span>= {<span style="color: #800000;">'</span><span style="color: #800000;">some</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">data</span><span style="color: #800000;">'</span><span style="color: #000000;">}
+headers </span>= {<span style="color: #800000;">'</span><span style="color: #800000;">content-type</span><span style="color: #800000;">'</span>: <span style="color: #800000;">'</span><span style="color: #800000;">application/json</span><span style="color: #800000;">'</span><span style="color: #000000;">}
+ 
+ret </span>= requests.post(url, data=json.dumps(payload), headers=<span style="color: #000000;">headers)
+ 
+</span><span style="color: #0000ff;">print</span><span style="color: #000000;">(ret.text)
+</span><span style="color: #0000ff;">print</span>(ret.cookies)</pre>
+</div>
+<span class="cnblogs_code_collapse">POST请求</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('cb27410f-835b-4d06-a5bc-fa92f517640d')"><img id="code_img_closed_cb27410f-835b-4d06-a5bc-fa92f517640d" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_cb27410f-835b-4d06-a5bc-fa92f517640d" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('cb27410f-835b-4d06-a5bc-fa92f517640d',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_cb27410f-835b-4d06-a5bc-fa92f517640d" class="cnblogs_code_hide">
+<pre>requests.get(url, params=None, **<span style="color: #000000;">kwargs)
+requests.post(url, data</span>=None, json=None, **<span style="color: #000000;">kwargs)
+requests.put(url, data</span>=None, **<span style="color: #000000;">kwargs)
+requests.head(url, </span>**<span style="color: #000000;">kwargs)
+requests.delete(url, </span>**<span style="color: #000000;">kwargs)
+requests.patch(url, data</span>=None, **<span style="color: #000000;">kwargs)
+requests.options(url, </span>**<span style="color: #000000;">kwargs)
+ 
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 以上方法均是在此方法的基础上构建</span>
+requests.request(method, url, **kwargs)</pre>
+</div>
+<span class="cnblogs_code_collapse">其他请求</span></div>
+<p>更多requests模块相关的文档见：http://cn.python-requests.org/zh_CN/latest/</p>
+<p>3、Http请求和XML实例</p>
+<p>实例：检测QQ账号是否在线</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('012d1fa1-2cec-49aa-9dda-852f0df44347')"><img id="code_img_closed_012d1fa1-2cec-49aa-9dda-852f0df44347" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_012d1fa1-2cec-49aa-9dda-852f0df44347" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('012d1fa1-2cec-49aa-9dda-852f0df44347',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_012d1fa1-2cec-49aa-9dda-852f0df44347" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> urllib
+</span><span style="color: #0000ff;">import</span><span style="color: #000000;"> requests
+</span><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 使用内置模块urllib发送HTTP请求，或者XML格式内容</span>
+<span style="color: #800000;">"""</span><span style="color: #800000;">
+f = urllib.request.urlopen('http://www.webxml.com.cn//webservices/qqOnlineWebService.asmx/qqCheckOnline?qqCode=424662508')
+result = f.read().decode('utf-8')
+</span><span style="color: #800000;">"""</span>
+
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 使用第三方模块requests发送HTTP请求，或者XML格式内容</span>
+r = requests.get(<span style="color: #800000;">'</span><span style="color: #800000;">http://www.webxml.com.cn//webservices/qqOnlineWebService.asmx/qqCheckOnline?qqCode=424662508</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+result </span>=<span style="color: #000000;"> r.text
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 解析XML格式内容</span>
+node =<span style="color: #000000;"> ET.XML(result)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 获取内容</span>
+<span style="color: #0000ff;">if</span> node.text == <span style="color: #800000;">"</span><span style="color: #800000;">Y</span><span style="color: #800000;">"</span><span style="color: #000000;">:
+    </span><span style="color: #0000ff;">print</span>(<span style="color: #800000;">"</span><span style="color: #800000;">在线</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+</span><span style="color: #0000ff;">else</span><span style="color: #000000;">:
+    </span><span style="color: #0000ff;">print</span>(<span style="color: #800000;">"</span><span style="color: #800000;">离线</span><span style="color: #800000;">"</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p><span style="line-height: 1.5;">实例：查看火车停靠信息</span></p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('a2817a1b-07b7-49b8-bee4-0014cdd33584')"><img id="code_img_closed_a2817a1b-07b7-49b8-bee4-0014cdd33584" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_a2817a1b-07b7-49b8-bee4-0014cdd33584" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('a2817a1b-07b7-49b8-bee4-0014cdd33584',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_a2817a1b-07b7-49b8-bee4-0014cdd33584" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> urllib
+</span><span style="color: #0000ff;">import</span><span style="color: #000000;"> requests
+</span><span style="color: #0000ff;">from</span> xml.etree <span style="color: #0000ff;">import</span><span style="color: #000000;"> ElementTree as ET
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 使用内置模块urllib发送HTTP请求，或者XML格式内容</span>
+<span style="color: #800000;">"""</span><span style="color: #800000;">
+f = urllib.request.urlopen('http://www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getDetailInfoByTrainCode?TrainCode=G666&amp;UserID=')
+result = f.read().decode('utf-8')
+</span><span style="color: #800000;">"""</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;"> 使用第三方模块requests发送HTTP请求，或者XML格式内容</span>
+r = requests.get(<span style="color: #800000;">'</span><span style="color: #800000;">http://www.webxml.com.cn/WebServices/TrainTimeWebService.asmx/getDetailInfoByTrainCode?TrainCode=G666&amp;UserID=</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+result </span>=<span style="color: #000000;"> r.text
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 解析XML格式内容</span>
+root =<span style="color: #000000;"> ET.XML(result)
+</span><span style="color: #0000ff;">for</span> node <span style="color: #0000ff;">in</span> root.iter(<span style="color: #800000;">'</span><span style="color: #800000;">TrainDetailInfo</span><span style="color: #800000;">'</span><span style="color: #000000;">):
+    </span><span style="color: #0000ff;">print</span>(node.find(<span style="color: #800000;">'</span><span style="color: #800000;">TrainStation</span><span style="color: #800000;">'</span>).text,node.find(<span style="color: #800000;">'</span><span style="color: #800000;">StartTime</span><span style="color: #800000;">'</span>).text,node.tag,node.attrib)</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p>注：更多接口<a href="http://www.cnblogs.com/wupeiqi/archive/2012/11/18/2776014.html" target="_blank">猛击这里</a></p>
+<h2><span style="line-height: 1.5;">十、logging</span></h2>
+<p><span style="line-height: 1.5;">用于便捷记录日志且<strong>线程安全</strong>的模块</span></p>
+<p><strong>1、单文件日志</strong></p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import logging
+ 
+ 
+logging.basicConfig(filename='log.log',
+                    format='%(asctime)s - %(name)s - %(levelname)s -%(module)s:  %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S %p',
+                    level=10)
+ 
+logging.debug('debug')
+logging.info('info')
+logging.warning('warning')
+logging.error('error')
+logging.critical('critical')
+logging.log(10,'log')</pre>
+</div>
+<p>日志等级：</p>
+<div class="cnblogs_code">
+<pre>CRITICAL = 50<span style="color: #000000;">
+FATAL </span>=<span style="color: #000000;"> CRITICAL
+ERROR </span>= 40<span style="color: #000000;">
+WARNING </span>= 30<span style="color: #000000;">
+WARN </span>=<span style="color: #000000;"> WARNING
+INFO </span>= 20<span style="color: #000000;">
+DEBUG </span>= 10<span style="color: #000000;">
+NOTSET </span>= 0</pre>
+</div>
+<p>注：<span style="color: #ff0000;">只有【当前写等级】大于【日志等级】时，日志文件才被记录。</span></p>
+<p>日志记录格式：</p>
+<p><img src="http://images2015.cnblogs.com/blog/425762/201605/425762-20160524044013866-178249755.png" alt="" width="719" height="379" /></p>
+<p><strong>2、多文件日志</strong></p>
+<p>对于上述记录日志的功能，只能将日志记录在单文件中，如果想要设置多个日志文件，logging.basicConfig将无法完成，需要自定义文件和日志操作对象。</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('4e66d637-a142-4ff1-85e4-8e170211f597')"><img id="code_img_closed_4e66d637-a142-4ff1-85e4-8e170211f597" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_4e66d637-a142-4ff1-85e4-8e170211f597" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('4e66d637-a142-4ff1-85e4-8e170211f597',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_4e66d637-a142-4ff1-85e4-8e170211f597" class="cnblogs_code_hide">
+<pre><span style="color: #000000;"># 定义文件
+file_1_1 </span>= logging.FileHandler('l1_1.log', 'a', encoding='utf-8'<span style="color: #000000;">)
+fmt </span>= logging.Formatter(fmt="%(asctime)s - %(name)s - %(levelname)s -%(module)s:  %(message)s"<span style="color: #000000;">)
+file_1_1.setFormatter(fmt)
+
+file_1_2 </span>= logging.FileHandler('l1_2.log', 'a', encoding='utf-8'<span style="color: #000000;">)
+fmt </span>=<span style="color: #000000;"> logging.Formatter()
+file_1_2.setFormatter(fmt)
+
+# 定义日志
+logger1 </span>= logging.Logger('s1', level=<span style="color: #000000;">logging.ERROR)
+logger1.addHandler(file_1_1)
+logger1.addHandler(file_1_2)
+
+
+# 写日志
+logger1.critical(</span>'1111')</pre>
+</div>
+<span class="cnblogs_code_collapse">日志一</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('62bbab75-da92-4b8b-bcde-5f9691d58d21')"><img id="code_img_closed_62bbab75-da92-4b8b-bcde-5f9691d58d21" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_62bbab75-da92-4b8b-bcde-5f9691d58d21" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('62bbab75-da92-4b8b-bcde-5f9691d58d21',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_62bbab75-da92-4b8b-bcde-5f9691d58d21" class="cnblogs_code_hide">
+<pre><span style="color: #008000;">#</span><span style="color: #008000;"> 定义文件</span>
+file_2_1 = logging.FileHandler(<span style="color: #800000;">'</span><span style="color: #800000;">l2_1.log</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">a</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+fmt </span>=<span style="color: #000000;"> logging.Formatter()
+file_2_1.setFormatter(fmt)
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 定义日志</span>
+logger2 = logging.Logger(<span style="color: #800000;">'</span><span style="color: #800000;">s2</span><span style="color: #800000;">'</span>, level=<span style="color: #000000;">logging.INFO)
+logger2.addHandler(file_2_1)</span></pre>
+</div>
+<span class="cnblogs_code_collapse">日志（二）</span></div>
+<p>如上述创建的两个日志对象</p>
+<ul>
+<li>当使用【logger1】写日志时，会将相应的内容写入 l1_1.log 和 l1_2.log 文件中</li>
+<li>当使用【logger2】写日志时，会将相应的内容写入 l2_1.log 文件中</li>
+</ul>
+<h2>十一、系统命令</h2>
+<p>可以执行shell命令的相关模块和函数有：</p>
+<ul>
+<li>os.system</li>
+<li>os.spawn*</li>
+<li>os.popen* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--废弃</li>
+<li>popen2.* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --废弃</li>
+<li>commands.* &nbsp; &nbsp; &nbsp;--废弃，3.x中被移除</li>
+</ul>
+<div class="cnblogs_code" onclick="cnblogs_code_show('d34743d4-5129-46cb-87d7-191fea030cdb')"><img id="code_img_closed_d34743d4-5129-46cb-87d7-191fea030cdb" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_d34743d4-5129-46cb-87d7-191fea030cdb" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('d34743d4-5129-46cb-87d7-191fea030cdb',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_d34743d4-5129-46cb-87d7-191fea030cdb" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> commands
+
+result </span>= commands.getoutput(<span style="color: #800000;">'</span><span style="color: #800000;">cmd</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+result </span>= commands.getstatus(<span style="color: #800000;">'</span><span style="color: #800000;">cmd</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+result </span>= commands.getstatusoutput(<span style="color: #800000;">'</span><span style="color: #800000;">cmd</span><span style="color: #800000;">'</span>)</pre>
+</div>
+<span class="cnblogs_code_collapse">commands</span></div>
+<p>以上执行shell命令的相关的模块和函数的功能均在 subprocess 模块中实现，并提供了更丰富的功能。</p>
+<p><strong>call&nbsp;</strong></p>
+<p>执行命令，返回状态码</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">ret = subprocess.call(["ls", "-l"], shell=False)
+ret = subprocess.call("ls -l", shell=True)
+</pre>
+</div>
+<p><strong>check_call</strong></p>
+<p>执行命令，如果执行状态码是 0 ，则返回0，否则抛异常</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">subprocess.check_call(["ls", "-l"])
+subprocess.check_call("exit 1", shell=True)
+</pre>
+</div>
+<p><strong>check_output</strong></p>
+<p>执行命令，如果状态码是 0 ，则返回执行结果，否则抛异常</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">subprocess.check_output(["echo", "Hello World!"])
+subprocess.check_output("exit 1", shell=True)
+</pre>
+</div>
+<p><strong>subprocess.Popen(...)</strong></p>
+<p>用于执行复杂的系统命令</p>
+<p>参数：</p>
+<ul>
+<li><span style="color: #888888;">args：shell命令，可以是字符串或者序列类型（如：list，元组）</span></li>
+<li><span style="color: #888888;">bufsize：指定缓冲。0 无缓冲,1 行缓冲,其他 缓冲区大小,负值 系统缓冲</span></li>
+<li><span style="color: #888888;">stdin, stdout, stderr：分别表示程序的标准输入、输出、错误句柄</span></li>
+<li><span style="color: #888888;">preexec_fn：只在Unix平台下有效，用于指定一个可执行对象（callable object），它将在子进程运行之前被调用</span></li>
+<li><span style="color: #888888;">close_sfs：在windows平台下，如果close_fds被设置为True，则新创建的子进程将不会继承父进程的输入、输出、错误管道。</span><br /><span style="color: #888888;">所以不能将close_fds设置为True同时重定向子进程的标准输入、输出与错误(stdin, stdout, stderr)。</span></li>
+<li><span style="color: #888888;">shell：同上</span></li>
+<li><span style="color: #888888;">cwd：用于设置子进程的当前目录</span></li>
+<li><span style="color: #888888;">env：用于指定子进程的环境变量。如果env = None，子进程的环境变量将从父进程中继承。</span></li>
+<li><span style="color: #888888;">universal_newlines：不同系统的换行符不同，True -&gt; 同意使用 \n</span></li>
+<li><span style="color: #888888;">startupinfo与createionflags只在windows下有效</span><br /><span style="color: #888888;">将被传递给底层的CreateProcess()函数，用于设置子进程的一些属性，如：主窗口的外观，进程的优先级等等&nbsp;</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<div class="cnblogs_code" onclick="cnblogs_code_show('a9f26e33-c1cb-45af-ba18-a499f4ca4c95')"><img id="code_img_closed_a9f26e33-c1cb-45af-ba18-a499f4ca4c95" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_a9f26e33-c1cb-45af-ba18-a499f4ca4c95" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('a9f26e33-c1cb-45af-ba18-a499f4ca4c95',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_a9f26e33-c1cb-45af-ba18-a499f4ca4c95" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> subprocess
+ret1 </span>= subprocess.Popen([<span style="color: #800000;">"</span><span style="color: #800000;">mkdir</span><span style="color: #800000;">"</span>,<span style="color: #800000;">"</span><span style="color: #800000;">t1</span><span style="color: #800000;">"</span><span style="color: #000000;">])
+ret2 </span>= subprocess.Popen(<span style="color: #800000;">"</span><span style="color: #800000;">mkdir t2</span><span style="color: #800000;">"</span>, shell=True)</pre>
+</div>
+<span class="cnblogs_code_collapse">执行普通命令</span></div>
+<p>终端输入的命令分为两种：</p>
+<ul>
+<li>输入即可得到输出，如：ifconfig</li>
+<li>输入进行某环境，依赖再输入，如：python</li>
+</ul>
+<div class="cnblogs_code" onclick="cnblogs_code_show('6547dbea-9687-4bf8-bc4d-484e8295d052')"><img id="code_img_closed_6547dbea-9687-4bf8-bc4d-484e8295d052" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_6547dbea-9687-4bf8-bc4d-484e8295d052" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('6547dbea-9687-4bf8-bc4d-484e8295d052',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_6547dbea-9687-4bf8-bc4d-484e8295d052" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> subprocess
+
+obj </span>= subprocess.Popen(<span style="color: #800000;">"</span><span style="color: #800000;">mkdir t3</span><span style="color: #800000;">"</span>, shell=True, cwd=<span style="color: #800000;">'</span><span style="color: #800000;">/home/dev</span><span style="color: #800000;">'</span>,)</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('be5d0fda-e4ee-433e-928c-19a6612e8c47')"><img id="code_img_closed_be5d0fda-e4ee-433e-928c-19a6612e8c47" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_be5d0fda-e4ee-433e-928c-19a6612e8c47" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('be5d0fda-e4ee-433e-928c-19a6612e8c47',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_be5d0fda-e4ee-433e-928c-19a6612e8c47" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> subprocess
+
+obj </span>= subprocess.Popen([<span style="color: #800000;">"</span><span style="color: #800000;">python</span><span style="color: #800000;">"</span>], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=<span style="color: #000000;">True)
+obj.stdin.write(</span><span style="color: #800000;">"</span><span style="color: #800000;">print(1)\n</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+obj.stdin.write(</span><span style="color: #800000;">"</span><span style="color: #800000;">print(2)</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+obj.stdin.close()
+
+cmd_out </span>=<span style="color: #000000;"> obj.stdout.read()
+obj.stdout.close()
+cmd_error </span>=<span style="color: #000000;"> obj.stderr.read()
+obj.stderr.close()
+
+</span><span style="color: #0000ff;">print</span><span style="color: #000000;">(cmd_out)
+</span><span style="color: #0000ff;">print</span>(cmd_error)</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('46b3bdf6-72bd-4973-b17c-4d9614b1505e')"><img id="code_img_closed_46b3bdf6-72bd-4973-b17c-4d9614b1505e" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_46b3bdf6-72bd-4973-b17c-4d9614b1505e" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('46b3bdf6-72bd-4973-b17c-4d9614b1505e',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_46b3bdf6-72bd-4973-b17c-4d9614b1505e" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> subprocess
+
+obj </span>= subprocess.Popen([<span style="color: #800000;">"</span><span style="color: #800000;">python</span><span style="color: #800000;">"</span>], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=<span style="color: #000000;">True)
+obj.stdin.write(</span><span style="color: #800000;">"</span><span style="color: #800000;">print(1)\n</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+obj.stdin.write(</span><span style="color: #800000;">"</span><span style="color: #800000;">print(2)</span><span style="color: #800000;">"</span><span style="color: #000000;">)
+
+out_error_list </span>=<span style="color: #000000;"> obj.communicate()
+</span><span style="color: #0000ff;">print</span>(out_error_list)</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('7642fb8a-dcd0-4d63-b461-8f236ad033d3')"><img id="code_img_closed_7642fb8a-dcd0-4d63-b461-8f236ad033d3" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_7642fb8a-dcd0-4d63-b461-8f236ad033d3" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('7642fb8a-dcd0-4d63-b461-8f236ad033d3',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_7642fb8a-dcd0-4d63-b461-8f236ad033d3" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> subprocess
+
+obj </span>= subprocess.Popen([<span style="color: #800000;">"</span><span style="color: #800000;">python</span><span style="color: #800000;">"</span>], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=<span style="color: #000000;">True)
+out_error_list </span>= obj.communicate(<span style="color: #800000;">'</span><span style="color: #800000;">print("hello")</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+</span><span style="color: #0000ff;">print</span>(out_error_list)</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<h2><strong>十二、shutil</strong></h2>
+<p>高级的 文件、文件夹、压缩包 处理模块</p>
+<p><strong>shutil.copyfileobj(fsrc, fdst[, length])</strong><br />将文件内容拷贝到另一个文件中</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import shutil
+
+shutil.copyfileobj(open('old.xml','r'), open('new.xml', 'w'))
+</pre>
+</div>
+<p><strong>shutil.copyfile(src, dst)</strong><br />拷贝文件</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">shutil.copyfile('f1.log', 'f2.log')
+</pre>
+</div>
+<p><strong>shutil.copymode(src, dst)</strong><br />仅拷贝权限。内容、组、用户均不变</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">shutil.copymode('f1.log', 'f2.log')
+</pre>
+</div>
+<p><strong>shutil.copystat(src, dst)</strong><br />仅拷贝状态的信息，包括：mode bits, atime, mtime, flags</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">shutil.copystat('f1.log', 'f2.log')
+</pre>
+</div>
+<p><strong>shutil.copy(src, dst)</strong><br />拷贝文件和权限</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import shutil
+
+shutil.copy('f1.log', 'f2.log')
+</pre>
+</div>
+<p><strong>shutil.copy2(src, dst)</strong><br />拷贝文件和状态信息</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import shutil
+
+shutil.copy2('f1.log', 'f2.log')
+</pre>
+</div>
+<p><strong>shutil.ignore_patterns(*patterns)</strong><br /><strong>shutil.copytree(src, dst, symlinks=False, ignore=None)</strong><br />递归的去拷贝文件夹</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import shutil
+
+shutil.copytree('folder1', 'folder2', ignore=shutil.ignore_patterns('*.pyc', 'tmp*'))
+</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('ca879aad-0ba7-468c-bd90-a19a9bd2cbfb')"><img id="code_img_closed_ca879aad-0ba7-468c-bd90-a19a9bd2cbfb" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_ca879aad-0ba7-468c-bd90-a19a9bd2cbfb" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('ca879aad-0ba7-468c-bd90-a19a9bd2cbfb',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_ca879aad-0ba7-468c-bd90-a19a9bd2cbfb" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> shutil
+
+shutil.copytree(</span><span style="color: #800000;">'</span><span style="color: #800000;">f1</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">f2</span><span style="color: #800000;">'</span>, symlinks=True, ignore=shutil.ignore_patterns(<span style="color: #800000;">'</span><span style="color: #800000;">*.pyc</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">tmp*</span><span style="color: #800000;">'</span>))</pre>
+</div>
+<span class="cnblogs_code_collapse">View Code</span></div>
+<p><strong>shutil.rmtree(path[, ignore_errors[, onerror]])</strong><br />递归的去删除文件</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import shutil
+
+shutil.rmtree('folder1')</pre>
+</div>
+<p><strong>shutil.move(src, dst)</strong><br />递归的去移动文件，它类似mv命令，其实就是重命名。</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">import shutil
+
+shutil.move('folder1', 'folder3')
+</pre>
+</div>
+<p><strong>shutil.make_archive(base_name, format,...)</strong></p>
+<p>创建压缩包并返回文件路径，例如：zip、tar</p>
+<p>创建压缩包并返回文件路径，例如：zip、tar</p>
+<ul>
+<li>base_name： 压缩包的文件名，也可以是压缩包的路径。只是文件名时，则保存至当前目录，否则保存至指定路径，<br />如：www &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=&gt;保存至当前路径<br />如：/Users/wupeiqi/www =&gt;保存至/Users/wupeiqi/</li>
+<li>format：	压缩包种类，&ldquo;zip&rdquo;, &ldquo;tar&rdquo;, &ldquo;bztar&rdquo;，&ldquo;gztar&rdquo;</li>
+<li>root_dir：	要压缩的文件夹路径（默认当前目录）</li>
+<li>owner：	用户，默认当前用户</li>
+<li>group：	组，默认当前组</li>
+<li>logger：	用于记录日志，通常是logging.Logger对象</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">#将 /Users/wupeiqi/Downloads/test 下的文件打包放置当前程序目录
+import shutil
+ret = shutil.make_archive("wwwwwwwwww", 'gztar', root_dir='/Users/wupeiqi/Downloads/test')
+ 
+ 
+#将 /Users/wupeiqi/Downloads/test 下的文件打包放置 /Users/wupeiqi/目录
+import shutil
+ret = shutil.make_archive("/Users/wupeiqi/wwwwwwwwww", 'gztar', root_dir='/Users/wupeiqi/Downloads/test')
+</pre>
+</div>
+<p>shutil 对压缩包的处理是调用 ZipFile 和 TarFile 两个模块来进行的，详细：</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('dfe560da-caf8-4112-ad01-6b29839a5c90')"><img id="code_img_closed_dfe560da-caf8-4112-ad01-6b29839a5c90" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_dfe560da-caf8-4112-ad01-6b29839a5c90" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('dfe560da-caf8-4112-ad01-6b29839a5c90',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_dfe560da-caf8-4112-ad01-6b29839a5c90" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> zipfile
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 压缩</span>
+z = zipfile.ZipFile(<span style="color: #800000;">'</span><span style="color: #800000;">laxi.zip</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">w</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+z.write(</span><span style="color: #800000;">'</span><span style="color: #800000;">a.log</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+z.write(</span><span style="color: #800000;">'</span><span style="color: #800000;">data.data</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+z.close()
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 解压</span>
+z = zipfile.ZipFile(<span style="color: #800000;">'</span><span style="color: #800000;">laxi.zip</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">r</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+z.extractall()
+z.close()</span></pre>
+</div>
+<span class="cnblogs_code_collapse">zipfile解压缩</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('c91609c8-ff9b-4d07-a4f0-2f9c8af21626')"><img id="code_img_closed_c91609c8-ff9b-4d07-a4f0-2f9c8af21626" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_c91609c8-ff9b-4d07-a4f0-2f9c8af21626" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('c91609c8-ff9b-4d07-a4f0-2f9c8af21626',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_c91609c8-ff9b-4d07-a4f0-2f9c8af21626" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> tarfile
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 压缩</span>
+tar = tarfile.open(<span style="color: #800000;">'</span><span style="color: #800000;">your.tar</span><span style="color: #800000;">'</span>,<span style="color: #800000;">'</span><span style="color: #800000;">w</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+tar.add(</span><span style="color: #800000;">'</span><span style="color: #800000;">/Users/wupeiqi/PycharmProjects/bbs2.log</span><span style="color: #800000;">'</span>, arcname=<span style="color: #800000;">'</span><span style="color: #800000;">bbs2.log</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+tar.add(</span><span style="color: #800000;">'</span><span style="color: #800000;">/Users/wupeiqi/PycharmProjects/cmdb.log</span><span style="color: #800000;">'</span>, arcname=<span style="color: #800000;">'</span><span style="color: #800000;">cmdb.log</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+tar.close()
+
+</span><span style="color: #008000;">#</span><span style="color: #008000;"> 解压</span>
+tar = tarfile.open(<span style="color: #800000;">'</span><span style="color: #800000;">your.tar</span><span style="color: #800000;">'</span>,<span style="color: #800000;">'</span><span style="color: #800000;">r</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+tar.extractall()  </span><span style="color: #008000;">#</span><span style="color: #008000;"> 可设置解压地址</span>
+tar.close()</pre>
+</div>
+<span class="cnblogs_code_collapse">tarfile解压缩</span></div>
+<h2>十三、paramiko</h2>
+<p>paramiko是一个用于做远程控制的模块，使用该模块可以对远程服务器进行命令或文件操作，值得一说的是，fabric和ansible内部的远程管理就是使用的paramiko来现实。</p>
+<p>1、下载安装</p>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">pycrypto，由于 paramiko 模块内部依赖pycrypto，所以先下载安装pycrypto
+pip3 install pycrypto
+pip3 install paramiko
+</pre>
+</div>
+<p>2、模块使用</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('ffa65f2f-88ac-486c-bfcf-3bed036a8cc9')"><img id="code_img_closed_ffa65f2f-88ac-486c-bfcf-3bed036a8cc9" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_ffa65f2f-88ac-486c-bfcf-3bed036a8cc9" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('ffa65f2f-88ac-486c-bfcf-3bed036a8cc9',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_ffa65f2f-88ac-486c-bfcf-3bed036a8cc9" class="cnblogs_code_hide">
+<pre><span style="color: #008000;">#</span><span style="color: #008000;">!/usr/bin/env python</span><span style="color: #008000;">
+#</span><span style="color: #008000;">coding:utf-8</span>
+
+<span style="color: #0000ff;">import</span><span style="color: #000000;"> paramiko
+
+ssh </span>=<span style="color: #000000;"> paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect(</span><span style="color: #800000;">'</span><span style="color: #800000;">192.168.1.108</span><span style="color: #800000;">'</span>, 22, <span style="color: #800000;">'</span><span style="color: #800000;">alex</span><span style="color: #800000;">'</span>, <span style="color: #800000;">'</span><span style="color: #800000;">123</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+stdin, stdout, stderr </span>= ssh.exec_command(<span style="color: #800000;">'</span><span style="color: #800000;">df</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+</span><span style="color: #0000ff;">print</span><span style="color: #000000;"> stdout.read()
+ssh.close();</span></pre>
+</div>
+<span class="cnblogs_code_collapse">执行命令 - 用户名+密码</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('df7bc9f8-2c0a-44fb-a74e-2d2ac75da4f5')"><img id="code_img_closed_df7bc9f8-2c0a-44fb-a74e-2d2ac75da4f5" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_df7bc9f8-2c0a-44fb-a74e-2d2ac75da4f5" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('df7bc9f8-2c0a-44fb-a74e-2d2ac75da4f5',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_df7bc9f8-2c0a-44fb-a74e-2d2ac75da4f5" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> paramiko
+
+private_key_path </span>= <span style="color: #800000;">'</span><span style="color: #800000;">/home/auto/.ssh/id_rsa</span><span style="color: #800000;">'</span><span style="color: #000000;">
+key </span>=<span style="color: #000000;"> paramiko.RSAKey.from_private_key_file(private_key_path)
+
+ssh </span>=<span style="color: #000000;"> paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect(</span><span style="color: #800000;">'</span><span style="color: #800000;">主机名 </span><span style="color: #800000;">'</span>, 端口, <span style="color: #800000;">'</span><span style="color: #800000;">用户名</span><span style="color: #800000;">'</span><span style="color: #000000;">, key)
+
+stdin, stdout, stderr </span>= ssh.exec_command(<span style="color: #800000;">'</span><span style="color: #800000;">df</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+</span><span style="color: #0000ff;">print</span><span style="color: #000000;"> stdout.read()
+ssh.close()</span></pre>
+</div>
+<span class="cnblogs_code_collapse">执行命令 - 密钥</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('70e7802f-aa03-45ea-9046-007b37c84cbd')"><img id="code_img_closed_70e7802f-aa03-45ea-9046-007b37c84cbd" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_70e7802f-aa03-45ea-9046-007b37c84cbd" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('70e7802f-aa03-45ea-9046-007b37c84cbd',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_70e7802f-aa03-45ea-9046-007b37c84cbd" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> os,sys
+</span><span style="color: #0000ff;">import</span><span style="color: #000000;"> paramiko
+
+t </span>= paramiko.Transport((<span style="color: #800000;">'</span><span style="color: #800000;">182.92.219.86</span><span style="color: #800000;">'</span>,22<span style="color: #000000;">))
+t.connect(username</span>=<span style="color: #800000;">'</span><span style="color: #800000;">wupeiqi</span><span style="color: #800000;">'</span>,password=<span style="color: #800000;">'</span><span style="color: #800000;">123</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+sftp </span>=<span style="color: #000000;"> paramiko.SFTPClient.from_transport(t)
+sftp.put(</span><span style="color: #800000;">'</span><span style="color: #800000;">/tmp/test.py</span><span style="color: #800000;">'</span>,<span style="color: #800000;">'</span><span style="color: #800000;">/tmp/test.py</span><span style="color: #800000;">'</span><span style="color: #000000;">) 
+t.close()
+
+
+</span><span style="color: #0000ff;">import</span><span style="color: #000000;"> os,sys
+</span><span style="color: #0000ff;">import</span><span style="color: #000000;"> paramiko
+
+t </span>= paramiko.Transport((<span style="color: #800000;">'</span><span style="color: #800000;">182.92.219.86</span><span style="color: #800000;">'</span>,22<span style="color: #000000;">))
+t.connect(username</span>=<span style="color: #800000;">'</span><span style="color: #800000;">wupeiqi</span><span style="color: #800000;">'</span>,password=<span style="color: #800000;">'</span><span style="color: #800000;">123</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+sftp </span>=<span style="color: #000000;"> paramiko.SFTPClient.from_transport(t)
+sftp.get(</span><span style="color: #800000;">'</span><span style="color: #800000;">/tmp/test.py</span><span style="color: #800000;">'</span>,<span style="color: #800000;">'</span><span style="color: #800000;">/tmp/test2.py</span><span style="color: #800000;">'</span><span style="color: #000000;">)
+t.close()</span></pre>
+</div>
+<span class="cnblogs_code_collapse">上传或下载文件 - 用户名+密码</span></div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('2d44679f-5e69-417a-bb7d-f1a2e9baa623')"><img id="code_img_closed_2d44679f-5e69-417a-bb7d-f1a2e9baa623" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_2d44679f-5e69-417a-bb7d-f1a2e9baa623" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('2d44679f-5e69-417a-bb7d-f1a2e9baa623',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_2d44679f-5e69-417a-bb7d-f1a2e9baa623" class="cnblogs_code_hide">
+<pre><span style="color: #0000ff;">import</span><span style="color: #000000;"> paramiko
+
+pravie_key_path </span>= <span style="color: #800000;">'</span><span style="color: #800000;">/home/auto/.ssh/id_rsa</span><span style="color: #800000;">'</span><span style="color: #000000;">
+key </span>=<span style="color: #000000;"> paramiko.RSAKey.from_private_key_file(pravie_key_path)
+
+t </span>= paramiko.Transport((<span style="color: #800000;">'</span><span style="color: #800000;">182.92.219.86</span><span style="color: #800000;">'</span>,22<span style="color: #000000;">))
+t.connect(username</span>=<span style="color: #800000;">'</span><span style="color: #800000;">wupeiqi</span><span style="color: #800000;">'</span>,pkey=<span style="color: #000000;">key)
+
+sftp </span>=<span style="color: #000000;"> paramiko.SFTPClient.from_transport(t)
+sftp.put(</span><span style="color: #800000;">'</span><span style="color: #800000;">/tmp/test3.py</span><span style="color: #800000;">'</span>,<span style="color: #800000;">'</span><span style="color: #800000;">/tmp/test3.py</span><span style="color: #800000;">'</span><span style="color: #000000;">) 
+
+t.close()
+
+</span><span style="color: #0000ff;">import</span><span style="color: #000000;"> paramiko
+
+pravie_key_path </span>= <span style="color: #800000;">'</span><span style="color: #800000;">/home/auto/.ssh/id_rsa</span><span style="color: #800000;">'</span><span style="color: #000000;">
+key </span>=<span style="color: #000000;"> paramiko.RSAKey.from_private_key_file(pravie_key_path)
+
+t </span>= paramiko.Transport((<span style="color: #800000;">'</span><span style="color: #800000;">182.92.219.86</span><span style="color: #800000;">'</span>,22<span style="color: #000000;">))
+t.connect(username</span>=<span style="color: #800000;">'</span><span style="color: #800000;">wupeiqi</span><span style="color: #800000;">'</span>,pkey=<span style="color: #000000;">key)
+
+sftp </span>=<span style="color: #000000;"> paramiko.SFTPClient.from_transport(t)
+sftp.get(</span><span style="color: #800000;">'</span><span style="color: #800000;">/tmp/test3.py</span><span style="color: #800000;">'</span>,<span style="color: #800000;">'</span><span style="color: #800000;">/tmp/test4.py</span><span style="color: #800000;">'</span><span style="color: #000000;">) 
+
+t.close()</span></pre>
+</div>
+<span class="cnblogs_code_collapse">上传或下载文件 - 密钥</span></div>
+<h2>十四、time</h2>
+<p>时间相关的操作，时间有三种表示方式：</p>
+<ul>
+<li>时间戳 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1970年1月1日之后的秒，即：time.time()</li>
+<li>格式化的字符串 &nbsp; &nbsp;2014-11-11 11:11， &nbsp; &nbsp;即：time.strftime('%Y-%m-%d')</li>
+<li>结构化时间 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;元组包含了：年、日、星期等... time.struct_time &nbsp; &nbsp;即：time.localtime()</li>
+</ul>
+<div class="cnblogs_Highlighter">
+<pre class="brush:python;gutter:true;">print time.time()
+print time.mktime(time.localtime())
+  
+print time.gmtime()    #可加时间戳参数
+print time.localtime() #可加时间戳参数
+print time.strptime('2014-11-11', '%Y-%m-%d')
+  
+print time.strftime('%Y-%m-%d') #默认当前时间
+print time.strftime('%Y-%m-%d',time.localtime()) #默认当前时间
+print time.asctime()
+print time.asctime(time.localtime())
+print time.ctime(time.time())
+  
+import datetime
+'''
+datetime.date：表示日期的类。常用的属性有year, month, day
+datetime.time：表示时间的类。常用的属性有hour, minute, second, microsecond
+datetime.datetime：表示日期时间
+datetime.timedelta：表示时间间隔，即两个时间点之间的长度
+timedelta([days[, seconds[, microseconds[, milliseconds[, minutes[, hours[, weeks]]]]]]])
+strftime("%Y-%m-%d")
+'''
+import datetime
+print datetime.datetime.now()
+print datetime.datetime.now() - datetime.timedelta(days=5)
+</pre>
+</div>
+<div class="cnblogs_code" onclick="cnblogs_code_show('6ec5ab65-27b9-411d-9eeb-1563305740b3')"><img id="code_img_closed_6ec5ab65-27b9-411d-9eeb-1563305740b3" class="code_img_closed" src="http://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt="" /><img id="code_img_opened_6ec5ab65-27b9-411d-9eeb-1563305740b3" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide('6ec5ab65-27b9-411d-9eeb-1563305740b3',event)" src="http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt="" />
+<div id="cnblogs_code_open_6ec5ab65-27b9-411d-9eeb-1563305740b3" class="cnblogs_code_hide">
+<pre>    %<span style="color: #000000;">Y  Year with century as a decimal number.
+    </span>%m  Month as a decimal number [01,12<span style="color: #000000;">].
+    </span>%d  Day of the month as a decimal number [01,31<span style="color: #000000;">].
+    </span>%H  Hour (24-hour clock) as a decimal number [00,23<span style="color: #000000;">].
+    </span>%M  Minute as a decimal number [00,59<span style="color: #000000;">].
+    </span>%S  Second as a decimal number [00,61<span style="color: #000000;">].
+    </span>%z  Time zone offset <span style="color: #0000ff;">from</span><span style="color: #000000;"> UTC.
+    </span>%a  Locale<span style="color: #800000;">'</span><span style="color: #800000;">s abbreviated weekday name.</span>
+    %A  Locale<span style="color: #800000;">'</span><span style="color: #800000;">s full weekday name.</span>
+    %b  Locale<span style="color: #800000;">'</span><span style="color: #800000;">s abbreviated month name.</span>
+    %B  Locale<span style="color: #800000;">'</span><span style="color: #800000;">s full month name.</span>
+    %c  Locale<span style="color: #800000;">'</span><span style="color: #800000;">s appropriate date and time representation.</span>
+    %I  Hour (12-hour clock) as a decimal number [01,12<span style="color: #000000;">].
+    </span>%p  Locale<span style="color: #800000;">'</span><span style="color: #800000;">s equivalent of either AM or PM.</span></pre>
+</div>
+<span class="cnblogs_code_collapse">格式化占位符</span></div>
+<p>&nbsp;</p>
+<h3>练习题：</h3>
+<p>1、通过HTTP请求和XML实现获取电视节目</p>
+<p>&nbsp; &nbsp; &nbsp;API：http://www.webxml.com.cn/webservices/ChinaTVprogramWebService.asmx&nbsp;<span style="line-height: 1.5;">&nbsp;</span></p>
+<p><span style="line-height: 1.5;">2、通过HTTP请求和JSON实现获取天气状况</span></p>
+<p><span style="line-height: 1.5;">&nbsp; &nbsp; &nbsp;API：</span>http://wthrcdn.etouch.cn/weather_mini?city=北京</p>
+<p>&nbsp;</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2016-05-17 13:49</span> <a href='http://www.cnblogs.com/wupeiqi/'>武沛齐</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>) &nbsp;<a href="https://i.cnblogs.com/EditArticles.aspx?postid=5501365" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(5501365);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=133379,cb_entryId=5501365,cb_blogApp=currentBlogApp,cb_blogUserGuid='7208b24d-95c9-e111-aa3f-842b2b196315',cb_entryCreatedDate='2016/5/17 13:49:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='ad_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<div id='ad_c2' class='c_ad_block'></div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2016 武沛齐
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+</body>
+</html>
