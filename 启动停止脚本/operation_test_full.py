@@ -54,32 +54,12 @@ else:
 
 
 
-PROJECT=str(PROJECT)
-tar_name=str(tar_name)
-PROJECT_TYPE=str(PROJECT_TYPE)
-DEPLOY_TYPE=str(DEPLOY_TYPE)
-ENV_TYPE=str(ENV_TYPE)
-args="{project:%s,tar_name:%s,project_type:%s,deploy_type:%s,env_type:%s}"%(PROJECT,tar_name,PROJECT_TYPE,DEPLOY_TYPE,ENV_TYPE)
-# os.system("/usr/bin/python2.4 /app/deploy/console/main.py"+args)
-#args=args.strip()
-# print(args)
-# args={"project":PROJECT,"tar_name":tar_name,"project_type":PROJECT_TYPE,"deploy_type":DEPLOY_TYPE,"env_type":ENV_TYPE}
-args=str(args).strip()
-print(args)
-os.system("/usr/bin/python2.4 /app/deploy/console/main.py"+args)
-# args={'project':PROJECT,'tar_name':tar_name,'project_type':PROJECT_TYPE,'deploy_type':DEPLOY_TYPE,'env_type':ENV_TYPE}
-# print(args)
-#args="{'project':'operation','tar_name':'operation_20161025232929.tar.gz','project_type':'tomcat','deploy_type':'full','env_type':'test'}"
-# os.system("args=`echo {\'project\':\'$PROJECT\'\,\'tar_name\':\'${tar_name}\'\,\'project_type\':\'${PROJECT_TYPE}\'\,\'deploy_type\':\'${DEPLOY_TYPE}\'\,\'env_type\':\'${ENV_TYPE}\'}`")
-# reslut=os.popen("echo $args").read()
-# print(reslut)
-# os.system("/usr/bin/python2.4 /app/deploy/console/main.py $args")
 
 
 
 
-msg="代码安全扫描报告:  http://jenkins.bangdao-tech.com/report/{w}.html".format(w=JOB_NAME)
-print(msg)
+# msg="代码安全扫描报告:  http://jenkins.bangdao-tech.com/report/{w}.html".format(w=JOB_NAME)
+# print(msg)
 
 
 
