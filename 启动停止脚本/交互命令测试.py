@@ -3,7 +3,7 @@
 #!/app/python3.5/bin/python3.5
 import pexpect
 import ptyprocess
-mypassword="kk"
+mypassword="1"
 child=pexpect.spawn("passwd xxx")
 child.sendline(mypassword)
 child.sendline(mypassword)
