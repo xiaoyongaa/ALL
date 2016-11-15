@@ -8,3 +8,6 @@ print(type(r))
 with open("r.txt","w") as e:
     for i in r:
         e.write(i)
+
+
+
