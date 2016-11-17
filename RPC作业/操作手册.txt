@@ -1,0 +1,1 @@
+先执行server/bin/的init.py设置下rabbitmq的服务器ip，然后再执行主程序bin/RabbitMQ_server_start.py即可，client端一样执行。

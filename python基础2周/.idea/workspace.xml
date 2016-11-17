@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bebc761b-f186-4d0d-a9ec-e9808d8b55f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pexpect交互式模块脚本/linux自动分区.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../pexpect交互式模块脚本/自动链接服务器脚本.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../网络编程练习1/线程锁.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../网络编程基础复习笔记/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../网络编程基础复习笔记/条件以及定时器2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../网络编程基础复习笔记/线程的基本使用.py" afterPath="$PROJECT_DIR$/../网络编程基础复习笔记/线程的基本使用.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池(低级版).py" afterPath="$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池(低级版).py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../网络编程基础复习笔记/进程基本操作.py" afterPath="$PROJECT_DIR$/../网络编程基础复习笔记/进程基本操作.py" />
     </list>
     <ignored path="python基础2周.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +27,7 @@
     <SUITE FILE_PATH="coverage/python基础2周$main.coverage" NAME="main Coverage Results" MODIFIED="1474466617299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../计算器/src" />
     <SUITE FILE_PATH="coverage/python基础2周$shutil.coverage" NAME="shutil模块以及压缩包处理 Coverage Results" MODIFIED="1474527537592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$111.coverage" NAME="111 Coverage Results" MODIFIED="1477638225595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../启动停止脚本" />
-    <SUITE FILE_PATH="coverage/python基础2周$1.coverage" NAME="1 Coverage Results" MODIFIED="1478860586784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
+    <SUITE FILE_PATH="coverage/python基础2周$1.coverage" NAME="1 Coverage Results" MODIFIED="1479346013794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$34.coverage" NAME="34课 Coverage Results" MODIFIED="1472699473703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python基础2周$crontab.coverage" NAME="crontab Coverage Results" MODIFIED="1474190994769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ATM/src" />
     <SUITE FILE_PATH="coverage/python基础2周$66jsonapi.coverage" NAME="66课，json获取api天气 Coverage Results" MODIFIED="1475282842414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
@@ -54,7 +56,7 @@
     <SUITE FILE_PATH="coverage/python基础2周$21_.coverage" NAME="21课作业 修改配置文件 Coverage Results" MODIFIED="1473323641699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块/第一阶段" />
     <SUITE FILE_PATH="coverage/python基础2周$crontab_start.coverage" NAME="crontab-start Coverage Results" MODIFIED="1474261067115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ATM/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$83_OS.coverage" NAME="83 OS模块 Coverage Results" MODIFIED="1474271174195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
-    <SUITE FILE_PATH="coverage/python基础2周$.coverage" NAME="线程锁 Coverage Results" MODIFIED="1479203384511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程练习1" />
+    <SUITE FILE_PATH="coverage/python基础2周$.coverage" NAME="进程基本操作 Coverage Results" MODIFIED="1479288867996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
     <SUITE FILE_PATH="coverage/python基础2周$server_longin__1_.coverage" NAME="server_longin (1) Coverage Results" MODIFIED="1476330373237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FTP/server/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$57.coverage" NAME="57课上课笔记 Coverage Results" MODIFIED="1473768778350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$socketclent.coverage" NAME="原生socket基本执行过程（clent） Coverage Results" MODIFIED="1478139086805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
@@ -76,7 +78,7 @@
     <SUITE FILE_PATH="coverage/python基础2周$_2.coverage" NAME="自定义线程池 2 Coverage Results" MODIFIED="1477302287467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程第四周" />
     <SUITE FILE_PATH="coverage/python基础2周$socketserver.coverage" NAME="原生socket基本执行过程（server） Coverage Results" MODIFIED="1478074483124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
     <SUITE FILE_PATH="coverage/python基础2周$rbbitmq.coverage" NAME="rbbitmq（关键字）生产者 Coverage Results" MODIFIED="1478845718979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记/消息队列" />
-    <SUITE FILE_PATH="coverage/python基础2周$RabbitMQ_server.coverage" NAME="RabbitMQ_server Coverage Results" MODIFIED="1479172842522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/server/src" />
+    <SUITE FILE_PATH="coverage/python基础2周$RabbitMQ_server.coverage" NAME="RabbitMQ_server Coverage Results" MODIFIED="1479367489003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/server/src" />
     <SUITE FILE_PATH="coverage/python基础2周$62_python.coverage" NAME="62课 python模块知识介绍 Coverage Results" MODIFIED="1473761551155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$35.coverage" NAME="35课练习 Coverage Results" MODIFIED="1472714870412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python基础2周$telnet.coverage" NAME="telnet Coverage Results" MODIFIED="1474552068758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
@@ -96,6 +98,7 @@
     <SUITE FILE_PATH="coverage/python基础2周$paramiko.coverage" NAME="paramiko Coverage Results" MODIFIED="1477282203184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程第四周" />
     <SUITE FILE_PATH="coverage/python基础2周$27.coverage" NAME="27课笔记 Coverage Results" MODIFIED="1473240572491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$jsion.coverage" NAME="jsion Coverage Results" MODIFIED="1476802255874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python基础2周$init.coverage" NAME="init Coverage Results" MODIFIED="1479368099795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/server/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$cahs.coverage" NAME="cahs Coverage Results" MODIFIED="1478921926781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程进阶/RabbitMQ" />
     <SUITE FILE_PATH="coverage/python基础2周$22.coverage" NAME="22 Coverage Results" MODIFIED="1477467797699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$admin_start__1_.coverage" NAME="admin-start (1) Coverage Results" MODIFIED="1475129667369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../选课系统/bin" />
@@ -119,13 +122,13 @@
     <SUITE FILE_PATH="coverage/python基础2周$p.coverage" NAME="p Coverage Results" MODIFIED="1477300123514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程第四周" />
     <SUITE FILE_PATH="coverage/python基础2周$55.coverage" NAME="55课字符串的格式化 Coverage Results" MODIFIED="1473733168171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$client_start.coverage" NAME="client_start Coverage Results" MODIFIED="1476492806856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="G:/35610c1088cc1f85aaf45853357c29f54e68b7/FTP/client/bin" />
-    <SUITE FILE_PATH="coverage/python基础2周$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1478832443460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记/消息队列" />
+    <SUITE FILE_PATH="coverage/python基础2周$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1479294684622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
     <SUITE FILE_PATH="coverage/python基础2周$rabbitMQ_.coverage" NAME="rabbitMQ(生产者）高可用 Coverage Results" MODIFIED="1477622398903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程进阶/RabbitMQ" />
     <SUITE FILE_PATH="coverage/python基础2周$socket_server__1_.coverage" NAME="socket_server (1) Coverage Results" MODIFIED="1477988175365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习2" />
     <SUITE FILE_PATH="coverage/python基础2周$socket_server__2_.coverage" NAME="socket_server (2) Coverage Results" MODIFIED="1476003191055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程第四周/socketServer介绍" />
     <SUITE FILE_PATH="coverage/python基础2周$configparser.coverage" NAME="configparser模块 Coverage Results" MODIFIED="1474450410999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$isinstanceissubclass.coverage" NAME="其他之isinstance和issubclass Coverage Results" MODIFIED="1475227662894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面向对象模块学习" />
-    <SUITE FILE_PATH="coverage/python基础2周$RabbitMQ_client.coverage" NAME="RabbitMQ_client Coverage Results" MODIFIED="1479114252406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/client/src" />
+    <SUITE FILE_PATH="coverage/python基础2周$RabbitMQ_client.coverage" NAME="RabbitMQ_client Coverage Results" MODIFIED="1479367491163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/client/src" />
     <SUITE FILE_PATH="coverage/python基础2周$pymsqlMySQL.coverage" NAME="pymsql模块操作MySQL Coverage Results" MODIFIED="1477894709075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程进阶/MySQL" />
     <SUITE FILE_PATH="coverage/python基础2周$useradd.coverage" NAME="useradd Coverage Results" MODIFIED="1476170396245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FTP/server/src" />
     <SUITE FILE_PATH="coverage/python基础2周$server_start.coverage" NAME="server_start Coverage Results" MODIFIED="1476491019848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="G:/35610c1088cc1f85aaf45853357c29f54e68b7/FTP/server/bin" />
@@ -146,7 +149,7 @@
     <SUITE FILE_PATH="coverage/python基础2周$student.coverage" NAME="student Coverage Results" MODIFIED="1475129836519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../选课系统/src" />
     <SUITE FILE_PATH="coverage/python基础2周$longshine_all.coverage" NAME="longshine_all Coverage Results" MODIFIED="1475463161617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../启动停止脚本" />
     <SUITE FILE_PATH="coverage/python基础2周$ftp_client_adduser.coverage" NAME="ftp_client_adduser Coverage Results" MODIFIED="1476155922873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FTP/client/src" />
-    <SUITE FILE_PATH="coverage/python基础2周$__.coverage" NAME="自定义线程池(高级版) Coverage Results" MODIFIED="1478616040503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
+    <SUITE FILE_PATH="coverage/python基础2周$__.coverage" NAME="自定义线程池(低级版) Coverage Results" MODIFIED="1479277263987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
     <SUITE FILE_PATH="coverage/python基础2周$_5.coverage" NAME="类成员之特殊成员 5 Coverage Results" MODIFIED="1475226850230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面向对象模块学习" />
     <SUITE FILE_PATH="coverage/python基础2周$start_client.coverage" NAME="start-client Coverage Results" MODIFIED="1477200539284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Fabric主机作业/client/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$IOclinent.coverage" NAME="IO多路复用代码clinent Coverage Results" MODIFIED="1476582465163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程第四周" />
@@ -154,14 +157,16 @@
     <SUITE FILE_PATH="coverage/python基础2周$ex.coverage" NAME="ex Coverage Results" MODIFIED="1475723670910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面向对象模块学习/练习/test" />
     <SUITE FILE_PATH="coverage/python基础2周$ex__2_.coverage" NAME="ex (2) Coverage Results" MODIFIED="1475754955551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/test/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$333.coverage" NAME="333 Coverage Results" MODIFIED="1477642095412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../启动停止脚本" />
+    <SUITE FILE_PATH="coverage/python基础2周$RabbitMQ_server_start.coverage" NAME="RabbitMQ_server_start Coverage Results" MODIFIED="1479368127397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/server/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$17.coverage" NAME="17课 Coverage Results" MODIFIED="1472885860854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
-    <SUITE FILE_PATH="coverage/python基础2周$cash.coverage" NAME="cash Coverage Results" MODIFIED="1478527810975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
+    <SUITE FILE_PATH="coverage/python基础2周$cash.coverage" NAME="cash Coverage Results" MODIFIED="1479294518827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
     <SUITE FILE_PATH="coverage/python基础2周$SQLAlchemy.coverage" NAME="SQLAlchemy之表操作 Coverage Results" MODIFIED="1477968109283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程进阶/MySQL" />
     <SUITE FILE_PATH="coverage/python基础2周$Paramiko.coverage" NAME="Paramiko模块介绍以及自定义封装 Coverage Results" MODIFIED="1478072536991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程进阶/Paramiko" />
     <SUITE FILE_PATH="coverage/python基础2周$23.coverage" NAME="23课课上练习 Coverage Results" MODIFIED="1473068010642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$config.coverage" NAME="config Coverage Results" MODIFIED="1475723446957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面向对象模块学习/test" />
     <SUITE FILE_PATH="coverage/python基础2周$c.coverage" NAME="c Coverage Results" MODIFIED="1476971034813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程第四周" />
-    <SUITE FILE_PATH="coverage/python基础2周$2.coverage" NAME="2 Coverage Results" MODIFIED="1478845717132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记/消息队列" />
+    <SUITE FILE_PATH="coverage/python基础2周$RabbitMQ_client_start.coverage" NAME="RabbitMQ_client_start Coverage Results" MODIFIED="1479368161159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/client/bin" />
+    <SUITE FILE_PATH="coverage/python基础2周$2.coverage" NAME="条件以及定时器2 Coverage Results" MODIFIED="1479262171056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
     <SUITE FILE_PATH="coverage/python基础2周$client_useradd.coverage" NAME="client_useradd Coverage Results" MODIFIED="1476170766714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../FTP/server/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$26.coverage" NAME="26课字符串的常见操作笔记 Coverage Results" MODIFIED="1472387457577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python基础2周$start_server.coverage" NAME="start-server Coverage Results" MODIFIED="1477200534995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Fabric主机作业/server/bin" />
@@ -172,6 +177,7 @@
     <SUITE FILE_PATH="coverage/python基础2周$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1475380509979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/模拟人生/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$redis.coverage" NAME="redis知识拾遗之发布订阅 Coverage Results" MODIFIED="1477536964274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程进阶" />
     <SUITE FILE_PATH="coverage/python基础2周$1111.coverage" NAME="1111 Coverage Results" MODIFIED="1476176001404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
+    <SUITE FILE_PATH="coverage/python基础2周$init__1_.coverage" NAME="init (1) Coverage Results" MODIFIED="1479368141314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/client/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$t.coverage" NAME="t Coverage Results" MODIFIED="1475728205962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/PycharmProjects/untitled2/code" />
     <SUITE FILE_PATH="coverage/python基础2周$21.coverage" NAME="21课作业练习 Coverage Results" MODIFIED="1477549166016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/python基础2周$56.coverage" NAME="56课笔记 Coverage Results" MODIFIED="1473734471191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
@@ -179,6 +185,7 @@
     <SUITE FILE_PATH="coverage/python基础2周$_3.coverage" NAME="类成员之特殊成员 3 Coverage Results" MODIFIED="1475223949613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面向对象模块学习" />
     <SUITE FILE_PATH="coverage/python基础2周$lib.coverage" NAME="lib Coverage Results" MODIFIED="1475723977553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面向对象模块学习/test" />
     <SUITE FILE_PATH="coverage/python基础2周$socket_client.coverage" NAME="socket_client Coverage Results" MODIFIED="1477981848194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../网络编程基础复习笔记" />
+    <SUITE FILE_PATH="coverage/python基础2周$connect_rabbitmq.coverage" NAME="connect_rabbitmq Coverage Results" MODIFIED="1479356957622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/RPC作业/server/src" />
     <SUITE FILE_PATH="coverage/python基础2周$40.coverage" NAME="40课 Coverage Results" MODIFIED="1472784028605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../函数和常用模块" />
     <SUITE FILE_PATH="coverage/python基础2周$student_start__1_.coverage" NAME="student-start (1) Coverage Results" MODIFIED="1475055668033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/选课系统/bin" />
     <SUITE FILE_PATH="coverage/python基础2周$index__1_.coverage" NAME="index (1) Coverage Results" MODIFIED="1475723093874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../面向对象模块学习/练习/test" />
@@ -198,44 +205,7 @@
     <favorites_list name="python基础2周" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RabbitMQ_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://E:/RPC作业/server/src/RabbitMQ_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="线程锁.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../网络编程练习1/线程锁.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linux自动分区.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pexpect交互式模块脚本/linux自动分区.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#21#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -260,14 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/原生socket基本执行过程.py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/原生socket基本执行过程（clent）.py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/原生socket基本执行过程（server）.py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/IO多路复用.py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/IO多路复用(client).py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/IO多路复用(server).py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/初识多线程.py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/线程的基本使用.py" />
         <option value="$PROJECT_DIR$/../pexpect交互式模块脚本/交互式添加系统用户.py" />
         <option value="$PROJECT_DIR$/../pexpect交互式模块脚本/test.py" />
         <option value="$USER_HOME$/Desktop/8.py" />
@@ -281,9 +243,7 @@
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/条件以及定时器.py" />
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池.py" />
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池（高级版）.py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池(低级版).py" />
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/cash.py" />
-        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/进程基本操作.py" />
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/进程锁.py" />
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/线程池.py" />
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/进程池.py" />
@@ -303,14 +263,24 @@
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/消息队列/2.py" />
         <option value="$PROJECT_DIR$/../网络编程基础复习笔记/消息队列/rabbitmq(关键字)消费者.py" />
         <option value="$PROJECT_DIR$/../函数和常用模块/正则表达式练习.py" />
-        <option value="$PROJECT_DIR$/../函数和常用模块/1.py" />
         <option value="$PROJECT_DIR$/../网络编程进阶/RabbitMQ/cahs.py" />
-        <option value="E:/RPC作业/client/src/RabbitMQ_client.py" />
-        <option value="E:/RPC作业/server/src/RabbitMQ_server.py" />
         <option value="$PROJECT_DIR$/../pexpect交互式模块脚本/生产秘钥.py" />
         <option value="$PROJECT_DIR$/../pexpect交互式模块脚本/自动链接服务器脚本.py" />
         <option value="$PROJECT_DIR$/../pexpect交互式模块脚本/linux自动分区.py" />
         <option value="$PROJECT_DIR$/../网络编程练习1/线程锁.py" />
+        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/条件以及定时器2.py" />
+        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池(低级版).py" />
+        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/线程的基本使用.py" />
+        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/进程基本操作.py" />
+        <option value="$PROJECT_DIR$/../网络编程基础复习笔记/test.py" />
+        <option value="$PROJECT_DIR$/../函数和常用模块/1.py" />
+        <option value="E:/RPC作业/server/src/connect_rabbitmq.py" />
+        <option value="E:/RPC作业/server/bin/init.py" />
+        <option value="$PROJECT_DIR$/../网络编程进阶/RabbitMQ/rabbitMQ基本形态（生产者）.py" />
+        <option value="E:/RPC作业/client/src/RabbitMQ_client.py" />
+        <option value="E:/RPC作业/server/src/RabbitMQ_server.py" />
+        <option value="E:/RPC作业/client/bin/RabbitMQ_client_start.py" />
+        <option value="E:/RPC作业/server/bin/RabbitMQ_server_start.py" />
       </list>
     </option>
   </component>
@@ -321,10 +291,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-211" />
-    <option name="y" value="62" />
+    <option name="x" value="-545" />
+    <option name="y" value="7" />
     <option name="width" value="1932" />
-    <option name="height" value="995" />
+    <option name="height" value="1016" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -370,7 +340,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -431,53 +400,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="网络编程进阶" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Paramiko" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python基础2周" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python代码" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="网络编程练习1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python基础2周" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python代码" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="正则" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python基础2周" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python代码" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="启动停止脚本" />
+              <option name="myItemId" value="网络编程练习2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -497,6 +420,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -511,21 +435,39 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.23702253" />
   </component>
-  <component name="RunManager" selected="Python.线程锁">
-    <configuration default="false" name="RabbitMQ_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.RabbitMQ_client_start">
+    <configuration default="false" name="init" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="E:/RPC作业/server/src" />
+      <option name="WORKING_DIRECTORY" value="E:/RPC作业/server/bin" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python基础2周" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:/RPC作业/server/src/RabbitMQ_server.py" />
+      <option name="SCRIPT_NAME" value="E:/RPC作业/server/bin/init.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RabbitMQ_server_start" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="E:/RPC作业/server/bin" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python基础2周" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:/RPC作业/server/bin/RabbitMQ_server_start.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -548,56 +490,38 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="cahs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="RabbitMQ_client_start" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../网络编程进阶/RabbitMQ" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="E:/RPC作业/client/bin" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python代码" />
+      <module name="python基础2周" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../网络编程进阶/RabbitMQ/cahs.py" />
+      <option name="SCRIPT_NAME" value="E:/RPC作业/client/bin/RabbitMQ_client_start.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="自动链接服务器脚本" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="init (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../pexpect交互式模块脚本" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="E:/RPC作业/client/bin" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python代码" />
+      <module name="python基础2周" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pexpect交互式模块脚本/自动链接服务器脚本.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="线程锁" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../网络编程练习1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python代码" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../网络编程练习1/线程锁.py" />
+      <option name="SCRIPT_NAME" value="E:/RPC作业/client/bin/init.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -1076,19 +1000,19 @@
       <item index="9" class="java.lang.String" itemvalue="Python.crontab-start" />
       <item index="10" class="java.lang.String" itemvalue="Python.student" />
       <item index="11" class="java.lang.String" itemvalue="Python.交互命令测试" />
-      <item index="12" class="java.lang.String" itemvalue="Python.RabbitMQ_server" />
-      <item index="13" class="java.lang.String" itemvalue="Python.RabbitMQ_client" />
-      <item index="14" class="java.lang.String" itemvalue="Python.cahs" />
-      <item index="15" class="java.lang.String" itemvalue="Python.自动链接服务器脚本" />
-      <item index="16" class="java.lang.String" itemvalue="Python.线程锁" />
+      <item index="12" class="java.lang.String" itemvalue="Python.init" />
+      <item index="13" class="java.lang.String" itemvalue="Python.RabbitMQ_server_start" />
+      <item index="14" class="java.lang.String" itemvalue="Python.RabbitMQ_client" />
+      <item index="15" class="java.lang.String" itemvalue="Python.RabbitMQ_client_start" />
+      <item index="16" class="java.lang.String" itemvalue="Python.init (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.线程锁" />
-        <item index="1" class="java.lang.String" itemvalue="Python.自动链接服务器脚本" />
-        <item index="2" class="java.lang.String" itemvalue="Python.RabbitMQ_server" />
-        <item index="3" class="java.lang.String" itemvalue="Python.RabbitMQ_client" />
-        <item index="4" class="java.lang.String" itemvalue="Python.cahs" />
+        <item index="0" class="java.lang.String" itemvalue="Python.RabbitMQ_client_start" />
+        <item index="1" class="java.lang.String" itemvalue="Python.init (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.RabbitMQ_server_start" />
+        <item index="3" class="java.lang.String" itemvalue="Python.init" />
+        <item index="4" class="java.lang.String" itemvalue="Python.RabbitMQ_client" />
       </list>
     </recent_temporary>
   </component>
@@ -1126,16 +1050,16 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-211" y="62" width="1932" height="995" extended-state="0" />
-    <editor active="true" />
+    <frame x="-545" y="7" width="1932" height="1016" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15553236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15553236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37908497" sideWeight="0.5083333" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66161025" sideWeight="0.49166667" order="11" side_tool="false" content_ui="tabs" x="4" y="238" width="1916" height="548" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.49166667" order="11" side_tool="false" content_ui="tabs" x="4" y="238" width="1916" height="548" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1159,16 +1083,16 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5141612" sideWeight="0.49166667" order="11" side_tool="false" content_ui="tabs" x="4" y="238" width="1916" height="548" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36056644" sideWeight="0.49166667" order="11" side_tool="false" content_ui="tabs" x="4" y="238" width="1916" height="548" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1890625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29488575" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.456427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4553377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1388,109 +1312,11 @@
           <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="97" />
+      <option name="time" value="98" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python35/site-packages/paramiko/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../网络编程进阶/Paramiko/Paramiko模块介绍以及自定义封装.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../网络编程进阶/Paramiko/基于用户名密码连接.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池(高级版).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/with.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python35/site-packages/pika/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python35/site-packages/pika/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="324" column="8" selection-start-line="324" selection-start-column="8" selection-end-line="324" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/cash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python35/site-packages/pika/spec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1027">
-          <caret line="2069" column="79" selection-start-line="2069" selection-start-column="79" selection-end-line="2069" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python35/site-packages/pika/adapters/blocking_connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="677" column="8" selection-start-line="677" selection-start-column="8" selection-end-line="677" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/python解释器/Lib/poplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/python解释器/Lib/smtplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="778" column="8" selection-start-line="778" selection-start-column="8" selection-end-line="778" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/python解释器/Lib/email/mime/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/消息队列/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/消息队列/rabbitMQ(exchange)消费者.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1547,52 +1373,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../正则/正则表达式分组.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../函数和常用模块/正则表达式分组.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../正则/正则复习1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../函数和常用模块/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../函数和常用模块/正则表达式练习.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../网络编程进阶/RabbitMQ/rabbitMQ基本形态（生产者）.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../网络编程进阶/RabbitMQ/rabbitMQ基本形态（消费者）.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1645,18 +1429,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/RPC作业/client/src/RabbitMQ_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1806">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../启动停止脚本/111.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1664,7 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1672,7 +1447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1680,7 +1454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1688,7 +1461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1696,7 +1468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1704,7 +1475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1712,7 +1482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1720,7 +1489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="90" selection-start-line="5" selection-start-column="90" selection-end-line="5" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1728,27 +1496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="903">
           <caret line="61" column="6" selection-start-line="61" selection-start-column="6" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/RPC作业/server/src/RabbitMQ_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/python解释器/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="764" column="17" selection-start-line="764" selection-start-column="17" selection-end-line="764" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1756,19 +1503,195 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../网络编程练习1/线程锁.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/信号量以及事件之批量放出.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jumpserver/jumpserver/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/条件以及定时器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/条件以及定时器2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池(低级版).py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#0#12#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/python解释器/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="1153" column="16" selection-start-line="1153" selection-start-column="16" selection-end-line="1153" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/线程的基本使用.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/自定义线程池(高级版).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#12#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/cash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程基础复习笔记/进程基本操作.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/RPC作业/server/src/install.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-99799706/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="509" column="4" selection-start-line="509" selection-start-column="4" selection-end-line="509" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/RPC作业/server/src/connect_rabbitmq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python35/site-packages/pika/adapters/blocking_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1178">
+          <caret line="293" column="8" selection-start-line="293" selection-start-column="8" selection-end-line="293" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程进阶/RabbitMQ/rabbitMQ基本形态（消费者）.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../网络编程进阶/RabbitMQ/rabbitMQ基本形态（生产者）.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/RPC作业/client/src/RabbitMQ_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1491">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/RPC作业/server/src/RabbitMQ_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/RPC作业/client/bin/RabbitMQ_client_start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/RPC作业/client/bin/init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/RPC作业/server/bin/RabbitMQ_server_start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/RPC作业/server/bin/init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

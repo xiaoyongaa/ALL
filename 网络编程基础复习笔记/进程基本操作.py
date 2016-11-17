@@ -10,7 +10,7 @@ def f(i,li):
 
 
 if __name__=="__main__":
-    #li=queues.Queue(20,ctx=multiprocessing)
+    li=queues.Queue(20,ctx=multiprocessing)
     obj=Manager()
     li=obj.dict()
     for i in range(10):
