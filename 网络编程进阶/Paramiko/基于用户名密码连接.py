@@ -1,7 +1,7 @@
-import paramiko
-ssh=paramiko.SSHClient()
+import paramiko目录
+ssh=paramiko目录.SSHClient()
 
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.set_missing_host_key_policy(paramiko目录.AutoAddPolicy())
 
 ssh.connect(hostname="10.0.0.25",port=22,username="root",password="1")
 

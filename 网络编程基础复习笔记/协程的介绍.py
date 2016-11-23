@@ -8,10 +8,14 @@ import requests
 
 def run(url):
     res=requests.get(url)
+    stat=res.status_code
+    print(stat)
     data=res.text
     print(len(data),res.url)
 
 
-gevent.joinall([gevent.spawn(run,"http://edu.51cto.com/?www"),gevent.spawn(run,"http://www.qq.com"),gevent.spawn(run,"http://www.baidu.com"),])
+gevent.joinall([gevent.spawn(run,"http://edu.51cto.com/?www"),
+                gevent.spawn(run,"http://www.qq.com"),
+                gevent.spawn(run,"http://www.baidu.com"),])
 
 
