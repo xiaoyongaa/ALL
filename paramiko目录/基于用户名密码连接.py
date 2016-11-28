@@ -4,9 +4,9 @@ ip="192.168.1.10"
 username="root"
 password="1"
 # key_file="/root/.ssh/id_rsa"
-# key=paramiko目录.RSAKey.from_private_key_file(key_file)
+# key=paramiko.RSAKey.from_private_key_file(key_file)
 
-transport=paramiko目录.Transport((ip, 22))
+transport=paramiko.Transport((ip, 22))
 transport.connect(username=username,password=password)
 
 ###########################

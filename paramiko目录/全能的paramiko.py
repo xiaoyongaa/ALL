@@ -21,15 +21,20 @@ class SSH_conecct():
         result=str(stdout.read(),encoding="utf-8")
         print(result)
 
-    def put(self):
+    def put(self,old,remote):
         sftp=paramiko.SFTPClient.from_transport(self.transport)
-        sftp.get("/root/2.sh","F:\\2.sh")
-
+        sftp.put(old,remote)
+    def get(self,remote,locat):
+        sftp=paramiko.SFTPClient.from_transport(self.transport)
+        sftp.get(remote,locat)
 
 
 
 obj=SSH_conecct("192.168.1.10","22","root","1")
 obj.connect()
 
-#obj.cmd("ls")
-obj.put()
+#res=obj.cmd("ifconfig")
+
+#obj.put("G:\phpcms_v9.6.0_UTF8.zip","/root/phpcms_v9.6.0_UTF8.zip")
+
+obj.get("/root/install.log.syslog","G:\log\install.log.syslog")
