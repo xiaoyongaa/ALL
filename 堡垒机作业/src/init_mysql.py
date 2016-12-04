@@ -55,10 +55,20 @@ class init_mysql():
         try:
             cursor=self.connect.cursor(cursor=pymysql.cursors.DictCursor)
             #sql="select * from baoleiji.baoleiji_user"
-            sql1="create database baoleiji character set utf8"
-            sql="create table baoleiji.baoleiji_user(id int not null primary key auto_increment,name char(16) not null unique,passworld varchar(32) not null)"
-            cursor.execute(sql1)
+            sql="create database baoleiji character set utf8"
+            sql_baoleiji="create table baoleiji.baoleiji_user(id int not null primary key auto_increment,name char(16) not null unique,passworld varchar(32) not null)"
+            sql_host_ip="create table baoleiji.host_ip(id int not null primary key auto_increment,hostname varchar(32) not null unique,ip_address varchar(32) not null unique,port int not null)"
+            sql_host_user="create table baoleiji.host_user(id int not null primary key auto_increment,username varchar(32) not null,passworld varchar(32) not null,auth_id varchar(32) not null)"
+            sql_host_user_to_ip="create table baoleiji.host_ip_to_host_user(host_ip_id int not null,host_user_id int not null,constraint host_ip_id foreign key (host_ip_id) references baoleiji.host_ip(id),constraint host_user_id foreign key (host_user_id) references baoleiji.host_user(id))"
+            sql_baoleiji_user_host="create table baoleiji.user_to_ip(baoleiji_user_id int not null,host_ip_id int not null,constraint baoleiji_user_id foreign key (baoleiji_user_id) references baoleiji.baoleiji_user(id),constraint host foreign key (host_ip_id) references baoleiji.host_ip(id))"
+            sql_baoleiji_user_host2="create table baoleiji.user_to_user(baoleiji_user_id int not null,host_user_id int not null,constraint b foreign key (baoleiji_user_id) references baoleiji.baoleiji_user(id),constraint h foreign key (host_user_id) references baoleiji.host_user(id))"
             cursor.execute(sql)
+            cursor.execute(sql_baoleiji)
+            cursor.execute(sql_host_ip)
+            cursor.execute(sql_host_user)
+            cursor.execute(sql_host_user_to_ip)
+            cursor.execute(sql_baoleiji_user_host)
+            cursor.execute(sql_baoleiji_user_host2)
             #data=cursor.fetchall()
             #print(data)
             self.connect.commit()
