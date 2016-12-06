@@ -1,8 +1,11 @@
 import os
+import paramiko
+import socket
 import sys
 import re
 import hashlib
 import pymysql
+from paramiko.py3compat import u
 path=os.path.abspath(__file__)
 path=os.path.dirname(os.path.dirname(path))
 sys.path.append(path)
@@ -144,6 +147,7 @@ class baoleiji():
                     self.add_host_infor()
                 elif choose=="2":
                     print("选择当前登录用户的主机进行操作")
+                    self.check_loging_user()
                 elif choose=="3":
                     print("查看当前用户的操作纪录")
                 elif choose=="4":
@@ -251,7 +255,7 @@ class baoleiji():
                     result=self.cursor.fetchall()
                     loging_id=result[-1].get("id")
                     print(loging_id)
-                    passworld=self.md5(passworld)
+                    #passworld=self.md5(passworld)
                     add_host_user_sql="insert into baoleiji.host_user(username,passworld,auth_id) values('{username}','{pas}','{auth_id}')".format(username=user,pas=passworld,auth_id=auth_id)
                     self.cursor.execute(add_host_user_sql)
                     last_id=self.cursor.lastrowid
@@ -374,7 +378,108 @@ class baoleiji():
              self.cursor.close()
 
 
+    def  check_loging_user(self):
+         print("这里是选择当前登录用户的主机进行操作模块")
+         count=0
+         flag=True
+         try:
+             sql="select id from baoleiji.baoleiji_user where name='{name}'".format(name=self.loging_username)
+             self.renture_mysql_connect_obj()
+             self.cursor.execute(sql)
+             user_id_dic=self.cursor.fetchall()
+             user_id=user_id_dic[-1].get("id")
+             sql2="select * from baoleiji.host_ip where host_ip.id in (select host_ip_id from baoleiji.host_ip_to_host_user where host_ip_to_host_user.host_ip_id in (select host_ip_id from baoleiji.user_to_ip where baoleiji_user_id='{id}'))".format(id=user_id)
+             self.cursor.execute(sql2)
+             ip_dic=self.cursor.fetchall()
+             #print(ip_dic)
+             sql3="select * from baoleiji.host_user where host_user.id in (select host_user_id from baoleiji.host_ip_to_host_user where host_ip_to_host_user.host_ip_id in (select host_ip_id from baoleiji.user_to_ip where baoleiji_user_id='{id}'))".format(id=user_id)
+             self.cursor.execute(sql3)
+             os_user_dic=self.cursor.fetchall()
+             #print(os_user_dic,len(os_user_dic))
+             self.connect.commit()
+             self.connect.close()
+             self.cursor.close()
+         except Exception as ex:
+             print(ex)
+             self.login()
+         while flag:
+             for i in ip_dic:
+                msg="id:{id},hostname:{hostname},ip:{ip},port:{port}".format(id=i.get("id"),hostname=i.get("hostname"),ip=i.get("ip_address"),port=i.get("port"))
+                print(msg)
+             choose=input("请选择你要操作的id编号:").strip()
+             if len(choose)==0:continue
+             sql="select * from baoleiji.host_ip where host_ip.id in (select host_ip_id from baoleiji.host_ip_to_host_user where host_ip_to_host_user.host_ip_id in (select host_ip_id from baoleiji.user_to_ip where baoleiji_user_id='{i}')) and id='{c}'".format(i=user_id,c=choose)
+             self.renture_mysql_connect_obj()
+             self.cursor.execute(sql)
+             result=self.cursor.fetchall()
+             if result==():
+                 print("你选择的id编号不在范围内,请重新输入")
+                 continue
+             else:
+                 print("你选择的编号正确!!")
+                 print(choose)
+                 print(result)
+                 f=True
+                 while f:
+                     for i in os_user_dic:
+                         msg="id:{i},username:{u},passworld:{pas},auth_id:{auth}".format(i=i.get("id"),u=i.get("username"),pas=i.get("passworld"),auth=i.get("auth_id"))
+                         print(msg)
+                     choose2=input("你选择你要登录主机的用户:").strip()
+                     sql="select * from baoleiji.host_user where host_user.id in (select host_user_id from baoleiji.host_ip_to_host_user where host_ip_to_host_user.host_ip_id in (select host_ip_id from baoleiji.user_to_ip where baoleiji_user_id='{i}')) and id='{c}'".format(i=user_id,c=choose2)
+                     self.renture_mysql_connect_obj()
+                     self.cursor.execute(sql)
+                     result=self.cursor.fetchall()
+                     if result==():
+                         print("你选择的id编号用户不在范围内,请重新输入")
+                         continue
+                     else:
+                         print("你选择的编号用户正确!!")
+                         print(choose2)
+                         print(result)
+                         self.ip_id=int(choose)
+                         self.user_id=int(choose2)
+                         print("主机信息选择完毕!")
+                         self.control_host()
+                         self.connect.commit()
+                         self.connect.close()
+                         self.cursor.close()
 
+    def control_host(self):
+        print("这里是链接主机模块")
+        print(self.ip_id,self.user_id)
+        self.check_linux_win()
+        print(self.if_os)
+        self.renture_mysql_connect_obj()   #或者mysql链接对象
+        sql="select id from baoleiji.baoleiji_user where name='{name}'".format(name=self.loging_username)
+        self.renture_mysql_connect_obj()
+        self.cursor.execute(sql)
+        baoleiji_dic=self.cursor.fetchall()
+        baoleiji_id=baoleiji_dic[-1].get("id")
+        sql_get_ip_infor="select * from baoleiji.host_ip where host_ip.id in (select host_ip_id from baoleiji.host_ip_to_host_user where host_ip_to_host_user.host_ip_id in (select host_ip_id from baoleiji.user_to_ip where baoleiji_user_id='{i}')) and id='{c}'".format(i=baoleiji_id,c=self.ip_id)
+        self.cursor.execute(sql_get_ip_infor)
+        ip_dic=self.cursor.fetchall()
+        sql_get_username_infor="select * from baoleiji.host_user where host_user.id in (select host_user_id from baoleiji.host_ip_to_host_user where host_ip_to_host_user.host_ip_id in (select host_ip_id from baoleiji.user_to_ip where baoleiji_user_id='{i1}')) and id='{c1}'".format(i1=baoleiji_id,c1=self.user_id)
+        self.cursor.execute(sql_get_username_infor)
+        user_dic=self.cursor.fetchall()
+        username=user_dic[-1].get("username")
+        passworld=user_dic[-1].get("passworld")
+        auth_id=user_dic[-1].get("auth_id")
+        ip=ip_dic[-1].get("ip_address")
+        port=ip_dic[-1].get("port")
+        print(username,passworld,auth_id,ip)
+
+
+
+
+    def check_linux_win(self):
+        try:
+            import termios   #判断主机为linux还是windows
+            import tty
+            self.if_os="linux"
+            print("this is linux")
+        except Exception as ex:
+            self.if_os="windows"
+            print("this is windows")
 
     def renture_mysql_connect_obj(self):   #返回pymysql链接对象
         mysql_ip=self.infor.get("mysql_ip")

@@ -38,37 +38,41 @@ def linux_shell(chan):
         tty.setcbreak(sys.stdin.fileno())
         chan.settimeout(0.0)
         #记录日志
-        with open("/root/baoleiji.log","a+") as log:
+        #with open("/root/baoleiji.log","a+") as log:
             #记录日志
-            while True:
-                readable, writeable, error = select.select([chan, sys.stdin, ],[],[],1)
-                if chan in readable:
-                    try:
-                        result=str(chan.recv(1024),encoding="utf-8")
-                        if len(result)==0:break
-                        if tab_falg==True:   #如果输入的tab按键的话，把结果写入日志
-                            if result.startswith("\r\n"):
-                                pass
-                            else:
-                                log.write(result)
-                                log.flush()
-                            tab_falg=False
-                        sys.stdout.write(result)
-                        sys.stdout.flush()
-                    except Exception as ex:
-                        print(ex,"linu_shell mode ")
-                elif sys.stdin in readable:
-                    inp=sys.stdin.read(1)
-                    if inp=="\t":   #判断用户输入的是否是tab符号
-                        tab_falg=True
-                    else:
-                        if ord(inp)==13:
-                            log.write("\n")   #写入记录
-                            log.flush()     #刷新
+        while True:
+            readable, writeable, error = select.select([chan, sys.stdin, ],[],[],1)
+            if chan in readable:
+                try:
+                    result=str(chan.recv(1024),encoding="utf-8")
+                    if len(result)==0:break
+                    '''
+                    if tab_falg==True:   #如果输入的tab按键的话，把结果写入日志
+                        if result.startswith("\r\n"):
+                            pass
                         else:
-                            log.write(inp)   #写入记录
-                            log.flush()     #刷新
-                    chan.send(inp)
+                            log.write(result)
+                            log.flush()
+                        tab_falg=False
+                    '''
+                    sys.stdout.write(result)
+                    sys.stdout.flush()
+                except Exception as ex:
+                    print(ex,"linu_shell mode ")
+            elif sys.stdin in readable:
+                inp=sys.stdin.read(1)
+                '''
+                if inp=="\t":   #判断用户输入的是否是tab符号
+                    tab_falg=True
+                else:
+                    if ord(inp)==13:
+                        log.write("\n")   #写入记录
+                        log.flush()     #刷新
+                    else:
+                        log.write(inp)   #写入记录
+                        log.flush()     #刷新
+                '''
+                chan.send(inp)
     finally:
         termios.tcsetattr(sys.stdin,termios.TCSADRAIN, oldtty)   # 还原系统终端属性
 
