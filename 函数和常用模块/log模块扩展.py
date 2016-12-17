@@ -1,6 +1,6 @@
 import logging
 #create logger
-logger=logging.getLogger("test")   #
+logger=logging.getLogger("t")   #
 logger.setLevel(logging.DEBUG)
 
 #屏幕输出Handler

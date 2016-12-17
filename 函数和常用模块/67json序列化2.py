@@ -6,3 +6,10 @@ print(type(l))
 l=json.loads(l)
 print(type(l))
 print(l)
+
+
+
+
+
+
+
