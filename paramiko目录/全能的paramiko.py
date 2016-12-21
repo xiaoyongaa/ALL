@@ -1,6 +1,4 @@
 import paramiko
-
-
 class SSH_conecct():
     def __init__(self,ip,port,username,password):
         self.ip=ip

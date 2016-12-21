@@ -4,7 +4,17 @@ path=os.path.abspath(__file__)
 path=os.path.dirname(os.path.dirname(path))
 sys.path.append(path)
 from src import init_mysql   #导入模块
-obj=init_mysql.init_mysql()  #创建对象
-if hasattr(obj,"main"):
-    fun=getattr(obj,"main")
-    fun()
+g=getattr(init_mysql,"init_mysql")  #是类
+
+obj=g() #对象
+h=getattr(obj,"main")
+h()
+
+
+
+
+
+# obj=init_mysql.init_mysql()  #创建对象
+# if hasattr(obj,"main"):
+#     fun=getattr(obj,"main")
+#     fun()

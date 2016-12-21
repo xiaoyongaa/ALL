@@ -3,6 +3,7 @@ import pexpect
 import ptyprocess
 import sys
 import os
+
 log_path="/root/mylog.txt"
 
 

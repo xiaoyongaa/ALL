@@ -9,5 +9,6 @@ class c2:
 class c3(c1,c2):  #第一个优先级最高
     def f3(self):
         pass
+
 obj=c3()
 obj.f2()
